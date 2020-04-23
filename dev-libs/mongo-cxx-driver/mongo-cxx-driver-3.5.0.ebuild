@@ -24,17 +24,21 @@ BDEPEND=""
 
 S="${WORKDIR}/${PN}-r${PV}"
 
-#src_prepare() {
+src_prepare() {
 #	eapply "${FILESDIR}/${P}-gentoo.patch"
-#	eapply_user
-#}
+	eapply_user
+	cmake-utils_src_prepare
+}
 
 src_configure() {
 	local mycmakeargs=(
 	-DBSONCXX_POLY_USE_BOOST=1
 	-DCMAKE_BUILD_TYPE=Release
 	-DBUILD_VERSION="${PV}"
-	-DCMAKE_INSTALL_PREFIX="${EPREFIX}/opt/mongo-cxx-driver/"
+	-DENABLE_UNINSTALL=OFF
+	#-DCMAKE_PREFIX_PATH="${EPREFIX}/usr"
+	#-DCMAKE_INSTALL_PREFIX="${EPREFIX}/usr"
+	#-DCMAKE_INSTALL_PREFIX="${EPREFIX}/opt/mongo-cxx-driver/"
 	)
 
 	if use static-libs; then
@@ -44,6 +48,10 @@ src_configure() {
 	fi
 
 	cmake-utils_src_configure
+}
+
+multilib_src_compile() {
+	cmake-utils_src_compile
 }
 
 src_install() {
