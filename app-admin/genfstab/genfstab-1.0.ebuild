@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="The fstab generator"
 HOMEPAGE="https://github.com/glacion/genfstab"
-SRC_URI="https://github.com/glacion/${PN}/archive/${PV}.zip"
+SRC_URI="https://github.com/glacion/${PN}/archive/${PV}.zip -> ${P}.zip"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -17,5 +17,5 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_install() {
-	dobin genfstab
+	dobin ${PN}
 }
