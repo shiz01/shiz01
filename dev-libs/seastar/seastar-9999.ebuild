@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit check-reqs cmake-utils toolchain-funcs
 
 DESCRIPTION="High performance server-side application framework."
 HOMEPAGE="http://seastar.io/"
@@ -20,7 +20,13 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 
-IUSE="+apps doc dpdk examples +hwloc numa old-compiller profile +sstring test" #coroutines-ts - don't work
+IUSE="+apps -c++14 +c++17 -c++2a -coroutines doc dpdk examples +hwloc numa profile +sstring test"
+RESTRICT="!test? ( test )"
+
+REQUIRED_USE="
+	^^ ( c++14 c++17 c++2a )
+	coroutines? ( c++2a !c++14 !c++17 )
+"
 
 DEPEND="dev-libs/boost
 		net-dns/c-ares
@@ -32,26 +38,43 @@ DEPEND="dev-libs/boost
 		dev-libs/protobuf
 		dev-cpp/yaml-cpp
 
+		c++17? ( || ( >=sys-devel/gcc-8.2 >=sys-devel/clang-7 ) )
+		c++2a? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) )
 		hwloc? ( sys-apps/hwloc )
 		dpdk? ( net-libs/dpdk )
 		numa? ( sys-process/numact )
 "
+
+
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
+CHECKREQS_DISK_BUILD="2G"
+
 src_prepare() {
-#	sed -i 's/-fcoroutines-ts/-fcoroutines/' ${S}/CMakeLists.txt # Needed rewrite code to support gcc-10.
+	if use coroutines ; then
+	
+		if $(tc-is-clang) ; then
+			if [[ $(($(clang-major-version))) < 10 ]] ; then
+				die "Error, clang version below 10 does not support coroutines"
+			fi
+		fi
+
+		if $(tc-is-gcc) ; then
+			if [[ $(($(gcc-major-version))) < 10 ]]; then 
+				die "Error, gcc version below 10 does not support coroutines"
+			else
+				sed -i 's/-fcoroutines-ts/-fcoroutines/' ${S}/CMakeLists.txt
+			fi
+		fi
+	fi
 
 	append-flags -fPIC
 	cmake-utils_src_prepare
 }
 
 src_configure() {
-	local mycmakeargs=( 
-		# It does not work on the gcc-{9.3.0,10.1.0,11.0.9999pre} and clang-10
-		#-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines-ts)
-
-		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF
+	local mycmakeargs=(
 		-DSeastar_SSTRING=$(usex sstring)
 		-DSeastar_APPS=$(usex apps)
 		-DSeastar_DOCS=$(usex doc)
@@ -64,15 +87,24 @@ src_configure() {
 		-DSeastar_TESTING=$(usex test)
 	)
 
-	if use old-compiller; then
+	if use c++14 && ! use c++17 && ! use c++2a ; then
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++14" 
 		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=OFF
+		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF
 		)
-	else
+	elif use c++17 && ! use c++14 && ! use c++2a ; then 
 		mycmakeargs+=( 
-		-DSeastar_CXX_DIALECT="gnu++17" 
-		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=ON )
+		-DSeastar_CXX_DIALECT="gnu++17"
+		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=ON
+		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF	
+		)
+	elif use c++2a && ! use c++14 && ! use c++17 ; then 
+		mycmakeargs+=( 
+		-DSeastar_CXX_DIALECT="gnu++2a"
+		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=ON
+		-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines)
+		)
 	fi
 
 	cmake-utils_src_configure

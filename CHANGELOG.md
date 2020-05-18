@@ -1,4 +1,9 @@
 
+2020-05-18	Shiz01	<shiz01@tutanota.com>
+
+	* partial correction dev-libs/seastar/seastar-9999.ebuild :
+	add support c++{14,17,2a}, coroutines.
+
 2020-05-15	Shiz01	<shiz01@tutanota.com>
 	
 	* add CHANGELOG.md :
