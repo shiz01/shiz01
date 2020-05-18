@@ -7,6 +7,8 @@
 	* add dev-libs/libpqxx/libpqxx-7.1.0.ebuild :
 	manual tests passed, in ebuild test is not configured.
 
+	* add dev-cpp/date/date-2.4.1.ebuild.
+
 2020-05-15	Shiz01	<shiz01@tutanota.com>
 	
 	* add CHANGELOG.md :
