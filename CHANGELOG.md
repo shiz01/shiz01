@@ -4,6 +4,9 @@
 	* partial correction dev-libs/seastar/seastar-9999.ebuild :
 	add support c++{14,17,2a}, coroutines.
 
+	* add dev-libs/libpqxx/libpqxx-7.1.0.ebuild :
+	manual tests passed, in ebuild test is not configured.
+
 2020-05-15	Shiz01	<shiz01@tutanota.com>
 	
 	* add CHANGELOG.md :
