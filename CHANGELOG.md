@@ -14,6 +14,9 @@
 	* minor fix dev-libs/seastar/seastar-9999.ebuild :
 	remove obsolted options, minor fix build
 
+	* bump games-server/TrinityCore/TrinityCore-335.20051.ebuild :
+	bump games-server/TrinityCore-335.20051.ebuild
+
 2020-05-18	Shiz01	<shiz01@tutanota.com>
 
 	* partial correction dev-libs/seastar/seastar-9999.ebuild :
