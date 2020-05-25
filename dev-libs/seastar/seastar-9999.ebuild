@@ -20,12 +20,12 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 
-IUSE="+apps -c++14 +c++17 -c++2a -coroutines doc dpdk examples +hwloc numa profile +sstring test"
+IUSE="+apps +c++17 -c++2a -coroutines doc dpdk examples +hwloc numa profile +sstring test"
 RESTRICT="!test? ( test )"
 
 REQUIRED_USE="
-	^^ ( c++14 c++17 c++2a )
-	coroutines? ( c++2a !c++14 !c++17 )
+	^^ ( c++17 c++2a )
+	coroutines? ( c++2a !c++17 )
 "
 
 DEPEND="dev-libs/boost
@@ -87,22 +87,14 @@ src_configure() {
 		-DSeastar_TESTING=$(usex test)
 	)
 
-	if use c++14 && ! use c++17 && ! use c++2a ; then
-		mycmakeargs+=( 
-		-DSeastar_CXX_DIALECT="gnu++14" 
-		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=OFF
-		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF
-		)
-	elif use c++17 && ! use c++14 && ! use c++2a ; then 
+	if use c++17 && ! use c++2a ; then 
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++17"
-		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=ON
 		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF	
 		)
-	elif use c++2a && ! use c++14 && ! use c++17 ; then 
+	elif use c++2a && ! use c++17 ; then 
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++2a"
-		-DSeastar_STD_OPTIONAL_VARIANT_STRINGVIEW=ON
 		-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines)
 		)
 	fi
@@ -111,7 +103,7 @@ src_configure() {
 }
 
 src_test() {
-	make-utils_src_test
+	cmake-utils_src_test
 }
 
 src_install() {

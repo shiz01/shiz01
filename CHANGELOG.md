@@ -11,6 +11,9 @@
 	* add ~ version dev-libs/libpqxx/libpqxx-7.1.1.ebuild :
 	bump unstable dev-libs/libpqxx-7.1.1.ebuild
 
+	* minor fix dev-libs/seastar/seastar-9999.ebuild :
+	remove obsolted options, minor fix build
+
 2020-05-18	Shiz01	<shiz01@tutanota.com>
 
 	* partial correction dev-libs/seastar/seastar-9999.ebuild :
