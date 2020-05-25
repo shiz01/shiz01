@@ -5,6 +5,9 @@
 
 	* minor fix dev-libs/mongo-cxx-driver/mongo-cxx-driver-3.5.0.ebuild 
 
+	* add stuble version dev-libs/mongo-cxx-driver/mongo-cxx-driver-3.4.1.ebuild :
+	bump stable dev-libs/mongo-cxx-driver-3.4.1.ebuild
+
 2020-05-18	Shiz01	<shiz01@tutanota.com>
 
 	* partial correction dev-libs/seastar/seastar-9999.ebuild :
