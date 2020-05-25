@@ -3,6 +3,8 @@
 	* partial correction dev-libs/simdjson/simdjson-0.3.1.ebuild :
 	add arm64 support
 
+	* minor fix dev-libs/mongo-cxx-driver/mongo-cxx-driver-3.5.0.ebuild 
+
 2020-05-18	Shiz01	<shiz01@tutanota.com>
 
 	* partial correction dev-libs/seastar/seastar-9999.ebuild :
