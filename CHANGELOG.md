@@ -1,3 +1,7 @@
+2020-05-26	Shiz01  <shiz01@tutanota.com>
+	
+	* partial correction dev-libs/simdjson/simdjson-0.3.1.ebuild :
+	add arm64 support
 
 2020-05-18	Shiz01	<shiz01@tutanota.com>
 
