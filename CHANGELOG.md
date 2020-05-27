@@ -1,3 +1,8 @@
+2020-05-27	Shiz01	<shiz01@tutanota.com>
+
+	* bump dev-db/sqlpp11/sqlpp11-0.59.ebuild :
+	bump last stable version dev-db/sqlpp11-0.59
+
 2020-05-26	Shiz01  <shiz01@tutanota.com>
 	
 	* partial correction dev-libs/simdjson/simdjson-0.3.1.ebuild :
