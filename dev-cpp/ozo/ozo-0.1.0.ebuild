@@ -17,7 +17,9 @@ IUSE="examples test"
 RESTRICT="!test? ( test )"
 
 
-DEPEND="dev-libs/boost"
+DEPEND="dev-libs/boost
+		dev-cpp/resource_pool
+"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
