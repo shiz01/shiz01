@@ -4,7 +4,7 @@
 	all is work, tetst passed.
 
 	* bump dev-cpp/ozo/ozo-0.1.0.ebuild :
-	bumo dev-cpp/ozo-0.1.0
+	bump dev-cpp/ozo-0.1.0
 
 2020-05-27	Shiz01	<shiz01@tutanota.com>
 
