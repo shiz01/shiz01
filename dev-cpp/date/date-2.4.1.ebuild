@@ -17,25 +17,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DEPEND=""
-
 RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
-
-src_prepare() {
-	append-flags -fPIC
-	cmake-utils_src_prepare
-}
-
-src_configure() {
-	cmake-utils_src_configure
-}
-
-src_test() {
-	make-utils_src_test
-}
-
-src_install() {
-	cmake-utils_src_install
-}
-
+BDEPEND="${DEPEND}
+		net-misc/curl"
 

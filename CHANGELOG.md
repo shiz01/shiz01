@@ -1,7 +1,7 @@
 2020-05-27	Shiz01	<shiz01@tutanota.com>
 
-	* bump dev-db/sqlpp11/sqlpp11-0.59.ebuild :
-	bump last stable version dev-db/sqlpp11-0.59
+	* rm fucking shit dev-cpp/sqlpp11/sqlpp11-0.59.ebuild :
+	rm dev-cpp/sqlpp11-0.59
 
 2020-05-26	Shiz01  <shiz01@tutanota.com>
 	
