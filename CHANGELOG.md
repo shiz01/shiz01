@@ -6,6 +6,9 @@
 	* bump dev-cpp/ozo/ozo-0.1.0.ebuild :
 	bump dev-cpp/ozo-0.1.0
 
+	* fix pedantic in dev-cpp/ozo/ozo-0.1.0.ebuild :
+	fix build & install examples
+
 2020-05-27	Shiz01	<shiz01@tutanota.com>
 
 	* rm fucking shit dev-cpp/sqlpp11/sqlpp11-0.59.ebuild :

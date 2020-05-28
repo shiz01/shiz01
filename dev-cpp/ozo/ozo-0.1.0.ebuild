@@ -21,6 +21,17 @@ DEPEND="dev-libs/boost"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
+
+src_prepare() {
+	eapply_user
+
+	use examples && append-flags "-Wno-error=pedantic"
+
+	cmake-utils_src_prepare
+}
+
+
+
 src_configure() {
 	local mycmakeargs=(
 		-DOZO_BUILD_TESTS=$(usex test)
