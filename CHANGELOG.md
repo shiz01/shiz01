@@ -1,3 +1,8 @@
+
+2020-05-28	Shiz01	<shiz01@tutanota.com>
+	* add dev-cpp/resource_pool/resource_pool-9999.ebuild: 
+	all is work, tetst passed.
+
 2020-05-27	Shiz01	<shiz01@tutanota.com>
 
 	* rm fucking shit dev-cpp/sqlpp11/sqlpp11-0.59.ebuild :
