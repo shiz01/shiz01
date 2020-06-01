@@ -1,3 +1,30 @@
+2020-05-29	Shiz01 <shiz01@tutanota.com>
+
+	* bump dev-cpp/sqlpp11/sqlpp11-0.59.ebuild :
+	bump dev-cpp/sqlpp11-0.59, all tests passed.
+
+	* minor fix dev-cpp/date/date-2.4.1.ebuild :
+	add to comile flags -fPIC.
+
+	* bump dev-cpp/sqlpp11/sqlpp11-9999.ebuild :
+	bump dev-cpp/sqlpp11-9999, all tests passed.
+
+	* bump dev-cpp/soci/soci-4.0.0.ebuild :
+	bump dev-cpp/soci-4.0.0, tests failed.
+
+	* bump dev-cpp/soci/soci-9999.ebuild :
+	bump dev-cpp/soci-9999, tests failed.
+
+	* bump dev-libs/oatpp/oatpp-1.0.0.ebuild :
+	bump dev-libs/oatpp-1.0.0, all tests passed
+
+	* bump dev-libs/oatpp/oatpp-1.1.0.ebuild :
+	bump dev-libs/oatpp-1.1.0, all tests passed
+
+	* bump dev-libs/oatpp/oatpp-9999.ebuild :
+	bump dev-libs/oatpp/oatpp-9999, all test passed
+
+
 2020-05-28	Shiz01	<shiz01@tutanota.com>
 
 	* add dev-cpp/resource_pool/resource_pool-9999.ebuild : 
