@@ -18,7 +18,6 @@ DEPEND="dev-libs/boost"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-
 src_prepare() {
 	eapply_user
 
@@ -35,13 +34,4 @@ src_configure() {
 
 	cmake-utils_src_configure
 }
-
-src_test() {
-	cmake-utils_src_test
-}
-
-src_install() {
-	cmake-utils_src_install
-}
-
 
