@@ -21,3 +21,10 @@ RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}
 		net-misc/curl"
 
+src_prepare() {
+	eapply_user
+
+	append-flags -fPIC
+	cmake-utils_src_prepare
+}
+
