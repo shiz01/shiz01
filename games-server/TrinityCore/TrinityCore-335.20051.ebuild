@@ -9,7 +9,7 @@ DESCRIPTION="TrinityCore Open Source MMO Framework."
 HOMEPAGE="https://www.trinitycore.org/"
 SRC_URI="https://github.com/${PN}/${PN}/archive/TDB${PV}.tar.gz"
 
-LICENSE="GPL-2.0"
+LICENSE="GPL-2"
 SLOT="335a"
 KEYWORDS="~amd64 ~x86"
 
