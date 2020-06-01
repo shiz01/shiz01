@@ -52,6 +52,8 @@ BDEPEND="${DEPEND}"
 CHECKREQS_DISK_BUILD="2G"
 
 src_prepare() {
+	eapply_user
+
 	if use coroutines ; then
 	
 		if $(tc-is-clang) ; then
@@ -101,13 +103,4 @@ src_configure() {
 
 	cmake-utils_src_configure
 }
-
-src_test() {
-	cmake-utils_src_test
-}
-
-src_install() {
-	cmake-utils_src_install
-}
-
 
