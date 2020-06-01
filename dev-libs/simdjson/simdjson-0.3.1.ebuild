@@ -20,6 +20,8 @@ BDEPEND=""
 
 src_prepare() {
 	eapply_user
+
+	append-flags -fPIC
 	cmake-utils_src_prepare
 }
 
@@ -34,13 +36,5 @@ src_configure() {
 
 	)
 	cmake-utils_src_configure
-}
-
-multilib_src_compile() {
-	cmake-utils_src_compile
-}
-
-src_install() {
-	cmake-utils_src_install
 }
 
