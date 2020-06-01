@@ -16,7 +16,6 @@ KEYWORDS="~amd64 ~arm64 ~amd64-linux"
 IUSE="examples test"
 RESTRICT="!test? ( test )"
 
-
 DEPEND="dev-libs/boost
 		dev-cpp/resource_pool
 "
