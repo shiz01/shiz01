@@ -1,3 +1,9 @@
+2020-06-04	Shiz01 <shiz01@tutanota.com>
+
+	* bump dev-libs/sobjectizer/sobjectizer-5.7.0.1.ebuild :
+	bump dev-libs/sobjectizer-5.7.0.1, all tests passed
+
+
 2020-05-29	Shiz01 <shiz01@tutanota.com>
 
 	* bump dev-cpp/sqlpp11/sqlpp11-0.59.ebuild :
