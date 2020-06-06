@@ -1,3 +1,14 @@
+2020-06-06	Shiz01 <shiz01@tutanota.com>
+	
+	* bump dev-cpp/magic_enum/magic_enum-0.6.{0,1,2,3,4,5,6}.ebuild :
+	bump dev-cpp/magic_enum-0.6.0, all tests passed
+	bump dev-cpp/magic_enum-0.6.1, all tests passed
+	bump dev-cpp/magic_enum-0.6.2, all tests passed
+	bump dev-cpp/magic_enum-0.6.3, all tests passed
+	bump dev-cpp/magic_enum-0.6.4, all tests passed
+	bump dev-cpp/magic_enum-0.6.5, all tests passed
+	bump dev-cpp/magic_enum-0.6.6, all tests passed
+
 2020-06-04	Shiz01 <shiz01@tutanota.com>
 
 	* bump dev-libs/sobjectizer/sobjectizer-5.7.0.1.ebuild :
