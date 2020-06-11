@@ -1,3 +1,8 @@
+
+2020-06-06	Shiz01 <shiz01@tutanota.com>
+	* bump dev-ada/ada-pretty/ada-pretty-1.0.0.ebuild :
+	bump dev-ada/ada-pretty-1.0.0
+
 2020-06-06	Shiz01 <shiz01@tutanota.com>
 	
 	* bump dev-cpp/magic_enum/magic_enum-0.6.{0,1,2,3,4,5,6}.ebuild :
