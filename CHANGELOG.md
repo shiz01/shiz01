@@ -4,7 +4,7 @@
 	* bump dev-ada/ada-pretty/ada-pretty-1.0.0.ebuild :
 	bump dev-ada/ada-pretty-1.0.0
 
-		* bump dev-ada/protobuf/protobuf-1.0.0.ebuild :
+	* bump dev-ada/protobuf/protobuf-1.0.0.ebuild :
 	bump dev-ada/protobuf-1.0.0, manual test passed.
 
 2020-06-06	Shiz01 <shiz01@tutanota.com>
