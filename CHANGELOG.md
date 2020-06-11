@@ -1,4 +1,4 @@
-
+	*CHANGELOG*
 
 2020-06-06	Shiz01 <shiz01@tutanota.com>
 	* bump dev-ada/ada-pretty/ada-pretty-1.0.0.ebuild :
