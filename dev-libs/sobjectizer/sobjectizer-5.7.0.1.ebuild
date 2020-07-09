@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="examples static-libs test"
 RESTRICT="!test? ( test )"
 
-DEPEND=""
+DEPEND="sys-devel/gcc[cxx]"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
