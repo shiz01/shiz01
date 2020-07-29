@@ -1,3 +1,9 @@
+
+
+2020-07-29  Shiz01 <shiz01@tutanota.com>
+	* bump dev-cpp/gcem/gcem-1.12.0.ebuild :
+	bump dev-cpp/gcem-1.12.0
+
 2020-06-11  Shiz01 <shiz01@tutanota.com>
 
 	* bump dev-ada/ada-pretty/ada-pretty-1.0.0.ebuild :
