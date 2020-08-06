@@ -11,6 +11,7 @@ HOMEPAGE="http://seastar.io/"
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	KEYWORDS=""
+	EGIT_BRANCH="master"
 	EGIT_REPO_URI="https://github.com/scylladb/${PN}"
 else
 	SRC_URI="https://github.com/scylladb/${PN}/archive/${P}.tar.gz"
