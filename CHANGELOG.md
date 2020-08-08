@@ -1,4 +1,4 @@
-# Chanchelog  
+# Chanchelog.  
 
 2020-08-08	Shiz01 <shiz01@tutanota.com>
 
