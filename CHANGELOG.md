@@ -1,6 +1,11 @@
 # Chanchelog.  
 
+
 2020-08-08	Shiz01 <shiz01@tutanota.com>
+
+	* dev-ada/ada-keystore: bump to git version 9999.  
+
+	* dev-ada/ada-keystore: remove 1.1.0 version, mask 1.2.0 version.  
 
 	* dev-ada/ada-keystore: bump to version 1.1.0.  
 
