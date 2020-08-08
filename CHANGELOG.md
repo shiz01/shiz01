@@ -3,6 +3,8 @@
 
 2020-08-08	Shiz01 <shiz01@tutanota.com>  
 
+	* dev-ada/ada-keystore: remove 1.2.0 version.  
+
 	* dev-libs/seastar: minor fix 9999 version.  
 
 	* dev-ada/ada-keystore: bump to git version 9999.  
