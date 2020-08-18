@@ -21,13 +21,13 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 
-IUSE="+apps +c++17 -c++2a -coroutines doc dpdk examples +hwloc numa profile +sstring test"
+# coroutines is removed.
+IUSE="+apps +c++17 -c++2a doc dpdk examples +hwloc numa profile +sstring test"
+
 RESTRICT="!test? ( test )"
 
-REQUIRED_USE="
-	^^ ( c++17 c++2a )
-	coroutines? ( c++2a !c++17 )
-"
+REQUIRED_USE="^^ ( c++17 c++2a )"
+#	coroutines? ( c++2a !c++17 )"
 
 DEPEND="dev-libs/boost
 		net-dns/c-ares
@@ -55,22 +55,23 @@ CHECKREQS_DISK_BUILD="2G"
 src_prepare() {
 	eapply_user
 
-	if use coroutines ; then
-	
-		if $(tc-is-clang) ; then
-			if [[ $(($(clang-major-version))) < 10 ]] ; then
-				die "Error, clang version below 10 does not support coroutines"
-			fi
-		fi
-
-		if $(tc-is-gcc) ; then
-			if [[ $(($(gcc-major-version))) < 10 ]]; then 
-				die "Error, gcc version below 10 does not support coroutines"
-			else
-				sed -i 's/-fcoroutines-ts/-fcoroutines/' ${S}/CMakeLists.txt
-			fi
-		fi
-	fi
+# REMOVED.
+#	if use coroutines ; then
+#	
+#		if $(tc-is-clang) ; then
+#			if [[ $(($(clang-major-version))) < 10 ]] ; then
+#				die "Error, clang version below 10 does not support coroutines"
+#			fi
+#		fi
+#
+#		if $(tc-is-gcc) ; then
+#			if [[ $(($(gcc-major-version))) < 10 ]]; then 
+#				die "Error, gcc version below 10 does not support coroutines"
+#			else
+#				sed -i 's/-fcoroutines-ts/-fcoroutines/' ${S}/CMakeLists.txt
+#			fi
+#		fi
+#	fi
 
 	append-flags -fPIC
 	cmake-utils_src_prepare
@@ -93,12 +94,12 @@ src_configure() {
 	if use c++17 && ! use c++2a ; then 
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++17"
-		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF	
+#		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF	removed.
 		)
 	elif use c++2a && ! use c++17 ; then 
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++2a"
-		-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines)
+#		-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines) removed.
 		)
 	fi
 

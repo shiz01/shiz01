@@ -7,6 +7,7 @@
 
 	* dev-libs/sobjectizer: fix cmake lib path in version 5.7.0.1, migrate to 5.7.0.1-r1
 
+	* dev-libs/seastar: remove experemental coroutines features in version 9999, please, migrate to 9999-r1
 
 2020-08-08	Shiz01 <shiz01@tutanota.com>  
 
