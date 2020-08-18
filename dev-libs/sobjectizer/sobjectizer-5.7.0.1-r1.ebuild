@@ -41,5 +41,13 @@ src_configure() {
 src_install() {
 	DESTDIR=${D} cmake-utils_src_install
 	mv "${ED}/usr/lib" "${ED}/usr/$(get_libdir)"
+
+	local path_to_patch="${ED}/usr/$(get_libdir)/cmake/${PN}"
+	local str="s/usr\/lib/usr\/$(get_libdir)/"
+
+	sed -i "${str}" "${path_to_patch}/sobjectizer-targets.cmake"
+	sed -i "${str}" "${path_to_patch}/sobjectizer-config.cmake"
+	sed -i "s/lib\/libso/$(get_libdir)\/libso/" "${path_to_patch}/sobjectizer-targets-gentoo.cmake"
+
 }
 

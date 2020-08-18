@@ -5,6 +5,9 @@
 
 	* dev-libs/sobjectizer: bump to version 5.7.1-r1  
 
+	* dev-libs/sobjectizer: fix cmake lib path in version 5.7.0.1, migrate to 5.7.0.1-r1
+
+
 2020-08-08	Shiz01 <shiz01@tutanota.com>  
 
 	* dev-ada/ada-keystore: remove 1.2.0 version.  
