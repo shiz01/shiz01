@@ -1,6 +1,10 @@
 # Chanchelog.  
 
 
+2020-08-18	Shiz01 <shiz01@tutanota.com>  
+
+	* dev-libs/sobjectizer: bump to version 5.7.1-r1  
+
 2020-08-08	Shiz01 <shiz01@tutanota.com>  
 
 	* dev-ada/ada-keystore: remove 1.2.0 version.  
