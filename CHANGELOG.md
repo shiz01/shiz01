@@ -9,6 +9,9 @@
 
 	* dev-libs/seastar: remove experemental coroutines features in version 9999, please, migrate to 9999-r1
 
+	* dev-libs/restinio: new package, 0.6.9 version.
+
+
 2020-08-08	Shiz01 <shiz01@tutanota.com>  
 
 	* dev-ada/ada-keystore: remove 1.2.0 version.  
