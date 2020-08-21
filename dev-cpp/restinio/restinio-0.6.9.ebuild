@@ -23,7 +23,7 @@ DEPEND="net-libs/http-parser
 		dev-libs/libpcre2
 		sys-libs/zlib
 		dev-libs/boost
-		sobjectizer? ( dev-libs/sobjectizer )
+		sobjectizer? ( dev-cpp/sobjectizer )
 "
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
