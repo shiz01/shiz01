@@ -3,9 +3,11 @@
 
 2020-08-21	Shiz01 <shiz01@tutanota.com>  
 
-	* dev-libs/restinio: moved to dev-cpp/restinio  
+	* dev-libs/restinio: moved to dev-cpp/restinio.  
 
-	* dev-libs/sobjectizer: moved to dev-cpp/sobjectizer  
+	* dev-libs/sobjectizer: moved to dev-cpp/sobjectizer.  
+
+	* dev-cpp/cpr: add libressl support to version 1.5.1.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
