@@ -15,6 +15,9 @@
 
 	* dev-cpp/curlpp: remove obsolted code in 0.8.1 version ebuild.  
 
+	* dev-libs/cppkafka: bump to version 0.3.1.  
+
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
