@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>shiz01@tutanota.com</email>
+<name>Shiz01</name>
+</maintainer>
+<use>
+ <flag name="elf">Support ELF files</flag>
+ <flag name="man">Build and install man pages</flag>
+ <flag name="pevent">Enable perf_event sideband support</flag>
+ <flag name="ptdump">Enable ptdump, a packet dumper</flag>
+ <flag name="ptxed">Enable ptxed, an instruction flow dumper</flag>
+ <flag name="shared">Build shared library</flag>
+ <flag name="sideband">Enable libipt-sb, a sideband correlation library</flag>
+</use>
+</pkgmetadata>
