@@ -32,7 +32,7 @@ src_configure() {
 	-DCPPKAFKA_BUILD_SHARED=ON
 	-DCPPKAFKA_DISABLE_TESTS=$(usex !test)
 	-DCPPKAFKA_DISABLE_EXAMPLES=$(usex !examples)
-	-DCPPKAFKA_BOOST_STATIC_LIBS=$(usex static)
+	-DCPPKAFKA_BOOST_STATIC_LIBS=$(usex static-libs)
 	-DCPPKAFKA_BOOST_USE_MULTITHREADED=$(usex boost)
 	-DCPPKAFKA_RDKAFKA_STATIC_LIB=$(usex static-libs)
 	)

@@ -33,6 +33,8 @@
 
 	* dev-libs/libpqxx: bump to version 7.1.2.  
 
+	* dev-libs/cppkafka: in version 0.3.1 fix static-libs use.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
