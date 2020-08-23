@@ -27,6 +27,7 @@
 
 	* dev-libs/oatpp: add description for use flags.  
 
+	* dev-libs/pocl: add description for use flags.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
