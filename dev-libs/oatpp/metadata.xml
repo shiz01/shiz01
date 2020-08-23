@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>shiz01@tutanota.com</email>
+<name>Shiz01</name>
+</maintainer>
+<use>
+ <flag name="no-thread_local">Enable this, if you platform not supported thread local storage.</flag>
+ <flag name="shared">Build shared library</flag>
+</use>
+</pkgmetadata>
