@@ -35,6 +35,8 @@
 
 	* dev-libs/cppkafka: in version 0.3.1 fix static-libs use.  
 
+	* dev-libs/seastar: add C++20 concept dependencies for 9999-r1 version.
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 

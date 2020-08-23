@@ -55,6 +55,10 @@ CHECKREQS_DISK_BUILD="2G"
 src_prepare() {
 	eapply_user
 
+	if $(tc-is-clang); then
+		die "Error, clang does not support concept.";
+	fi
+
 # REMOVED.
 #	if use coroutines ; then
 #	
