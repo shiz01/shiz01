@@ -21,7 +21,9 @@
 
 	* dev-libs/simdjson: bump to version 0.5.0.  
 
-	* dev-cpp/restinio: add descripton for use flags.  
+	* dev-cpp/restinio: add description for use flags.  
+
+	* dev-libs/seastar: add description for use flags.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  

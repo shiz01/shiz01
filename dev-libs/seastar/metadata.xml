@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>shiz01@tutanota.com</email>
+<name>Shiz01</name>
+</maintainer>
+<use>
+ <flag name="apps">Enable and build application targets</flag>
+ <flag name="c++17">Build using the C++17 standard</flag>
+ <flag name="c++2a">Build using the C++2a standard</flag>
+ <flag name="coroutines">Enable experimental support for Coroutines TS</flag>
+ <flag name="dpdk">Enable DPDK messaging</flag>
+ <flag name="hwloc">Enable HWLoc lib support</flag>
+ <flag name="numa">Use <pkg>sys-process/numactl</pkg> for numa support</flag>
+ <flag name="sstring">Use seastar's own string implementation</flag>
+</use>
+</pkgmetadata>
