@@ -29,7 +29,9 @@
 
 	* dev-libs/pocl: add description for use flags.  
 
-	* dev-libs/libipt: new package, 2.0.3 version.
+	* dev-libs/libipt: new package, 2.0.3 version.  
+
+	* dev-libs/libpqxx: bump to version 7.1.2.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
