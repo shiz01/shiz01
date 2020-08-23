@@ -15,10 +15,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE="test +ssl winssl"
 
 DEPEND="net-misc/curl
-		ssl? (
-			!libressl? ( dev-libs/openssl:0= )
-			libressl? ( dev-libs/libressl:0= )
-) "
+		ssl? ( dev-libs/openssl:0= )
+"
 
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}

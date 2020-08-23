@@ -9,7 +9,9 @@
 
 	* dev-cpp/cpr: add libressl support to version 1.5.1.  
 
+	* dev-cpp/cpr: fix ssl in version 1.5.1. Remove libressl support.
 
+	
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
 	* dev-libs/sobjectizer: bump to version 5.7.1-r1  
