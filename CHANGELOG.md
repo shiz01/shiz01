@@ -17,8 +17,9 @@
 
 	* dev-libs/cppkafka: bump to version 0.3.1.  
 
-	* dev-libs/mongo-cxx-driver: bump to version 3.6.0  
+	* dev-libs/mongo-cxx-driver: bump to version 3.6.0.  
 
+	* dev-libs/simdjson: bump to version 0.5.0.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  

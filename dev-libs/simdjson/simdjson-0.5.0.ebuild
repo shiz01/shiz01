@@ -12,7 +12,7 @@ SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="+exceptions fuzzing neon sanitize static-libs +threads"
+IUSE="+exceptions neon sanitize static-libs +threads"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
@@ -31,7 +31,6 @@ src_configure() {
 	-DSIMDJSON_EXCEPTIONS=$(usex exceptions)
 	-DSIMDJSON_BUILD_STATIC=$(usex static-libs)
 	-DSIMDJSON_SANITIZE=$(usex sanitize)
-	-DENABLE_FUZZING=$(usex fuzzing)
 	-DSIMDJSON_IMPLEMENTATION_ARM64=$(usex neon)
 
 	)
