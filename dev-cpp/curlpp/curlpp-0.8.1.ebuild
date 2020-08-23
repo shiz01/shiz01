@@ -21,21 +21,3 @@ DEPEND="net-misc/curl"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-#src_prepare() {
-#	eapply_user
-#
-#	local str="s/lib/$(get_libdir)/"
-#
-#	sed -i "${str}" ${S}/CMakeLists.txt
-#
-#	if ! use test; then
-#		sed -i 's/add_subdirectory(test)/#add_subdirectory(test)/' ${S}/CMakeLists.txt
-#	fi
-#
-#	append-flags -fPIC
-#	DESTDIR=${D} cmake-utils_src_prepare
-#}
-#
-#src_install() {
-#	DESTDIR=${D} cmake-utils_src_install
-#}

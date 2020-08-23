@@ -13,6 +13,8 @@
 
 	* dev-libs/TGUI: remove trash package.  
 
+	* dev-cpp/curlpp: remove obsolted code in 0.8.1 version ebuild.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
