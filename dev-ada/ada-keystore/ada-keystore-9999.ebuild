@@ -5,7 +5,7 @@ EAPI=7
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
-	KEYWORDS="~amd64"
+	KEYWORDS=""#~amd64"
 	EGIT_BRANCH="master"
 	EGIT_REPO_URI="https://github.com/stcarrez/ada-keystore"
 else
