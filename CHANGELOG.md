@@ -39,6 +39,7 @@
 
 	* dev-ada/ada-keystore: remove 9999 version. more build errors.  
 
+	* virtual/ada: add virtual package for Ada Compiler.  
 
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
