@@ -43,6 +43,8 @@
 
 	* dev-cpp/xxhash_cpp: add git 9999 version.  
 
+	* dev-cpp/restinio: bump to version 0.6.10.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
