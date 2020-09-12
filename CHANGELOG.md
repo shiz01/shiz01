@@ -41,6 +41,8 @@
 
 	* virtual/ada: add virtual package for Ada Compiler.  
 
+	* dev-cpp/xxhash_cpp: add git 9999 version.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
