@@ -45,6 +45,7 @@
 
 	* dev-cpp/restinio: bump to version 0.6.10.  
 
+	* metadata/md5-cache: add metadata.
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 

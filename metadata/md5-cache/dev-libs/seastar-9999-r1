@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp c++17? ( || ( >=sys-devel/gcc-8.2 >=sys-devel/clang-7 ) ) c++2a? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact ) dev-util/ninja >=dev-util/cmake-3.9.6 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare pretend setup test unpack
+DEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp c++17? ( || ( >=sys-devel/gcc-8.2 >=sys-devel/clang-7 ) ) c++2a? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact )
+DESCRIPTION=High performance server-side application framework.
+EAPI=7
+HOMEPAGE=http://seastar.io/
+IUSE=+apps +c++17 -c++2a doc dpdk examples +hwloc numa profile +sstring test
+LICENSE=Apache-2.0
+PROPERTIES=live
+RDEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp c++17? ( || ( >=sys-devel/gcc-8.2 >=sys-devel/clang-7 ) ) c++2a? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact )
+REQUIRED_USE=^^ ( c++17 c++2a )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=check-reqs	7e3fd1855a5e1b50bb9e80827b3f672d	cmake-utils	77cd39e6009811bf97a59d91ffd5b54f	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	git-r3	3e7ec3d6619213460c85e2aa48398441	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	98584e405e2b0264d37e8f728327fed1	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	wrapper	4251d4c84c25f59094fd557e0063a974	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=d350b3aad47cb3c0f01b0ddbfacda216
