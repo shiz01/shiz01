@@ -51,6 +51,8 @@
 
 	* dev-cpp/xlnt: bump to version 1.5.0.  
 
+	* media-fonts/consolas add consolas font.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
