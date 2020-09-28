@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm prepare setup
+DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DESCRIPTION=Consolas font.
+EAPI=7
+IUSE=X
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86
+LICENSE=Proprietary
+RESTRICT=strip binchecks
+SLOT=0
+_eclasses_=font	dd073b36fe3fd8b868c23bc23209db45
+_md5_=4b8b16e931a40da6f9946436783cb044

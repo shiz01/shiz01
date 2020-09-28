@@ -144,4 +144,6 @@
 
 	* dev-libs/simdjson: fix description for use flag fuzzing.  
 
+	* metadata/md5-cache: update metadata.  
+
 
