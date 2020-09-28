@@ -49,6 +49,8 @@
 
 	* dev-cpp/mstch: bump to version 1.0.2.  
 
+	* dev-cpp/xlnt: bump to version 1.5.0.  
+
 
 2020-08-18	Shiz01 <shiz01@tutanota.com>  
 
