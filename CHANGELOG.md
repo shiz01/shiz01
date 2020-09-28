@@ -148,6 +148,6 @@
 
 	* games-server/TrinityCore: update metadata.xml  
 
-	* _
+	* games-server/TrinityCore: minor fix in version 335a 20051.  
 
-
+	* 
