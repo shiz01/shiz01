@@ -3,6 +3,95 @@
 
 [DATA EXPUNGED]	Shiz01 <shiz01@tutanota.com>  
 
+
+	* add CHANGELOG.md 
+
+	* dev-libs/seastar: bump to git version 9999, not all dependencies are indicated.  
+
+	* dev-libs/seastar: partial correction git version 9999 - add support c++{14,17,2a}, coroutines.  
+
+	* dev-libs/libpqxx: bump to version 7.1.0, manual tests passed, in ebuild test is not configured.  
+
+	* dev-cpp/date/date: bump to version 2.4.1.  
+
+	* dev-cpp/resource_pool: bump to git version 9999 all is work, tetst passed.  
+
+	* dev-cpp/ozo: fix build & install examples.  
+
+	* dev-cpp/ozo: bump to version 0.1.0.  
+
+	* dev-libs/simdjson: partial correction 0.3.1 version, add arm64 support.  
+
+	* dev-libs/mongo-cxx-driver: minor fix 3.5.0 version.   
+
+	* dev-libs/mongo-cxx-driver: bump to stuble version 3.4.1.  
+
+	* dev-libs/libpqxx: bump to unstable version 7.1.1.  
+
+	* dev-libs/seastar: git 9999 version, remove obsolted options, minor fix build.  
+
+	* games-server/TrinityCore: bump to version 335a, 2020.05.15 snapshot.  
+
+	* dev-cpp/sqlpp11: remove fucking shit - dev-cpp/sqlpp11-0.59.  
+
+	* dev-cpp/sqlpp11: bump to version 0.59, all tests passed.   
+
+	* dev-cpp/date: minor fix 2.4.1 version - add to comile flags '-fPIC'.   
+
+	* dev-cpp/sqlpp11: bump to git version 9999, all tests passed.  
+
+	* dev-cpp/soci: bump to version 4.0.0, tests failed(WTF?).  
+
+	* dev-cpp/soci: bump to git version 9999, tests failed(WTF?).  
+
+	* dev-libs/oatpp: bump to stable version 1.0.0, all tests passed.  
+
+	* dev-libs/oatpp: bump to version 1.1.0, all tests passed.  
+
+	* dev-libs/oatpp: bump to git version 9999, all test passed.  
+
+	* dev-libs/sobjectizer: bump to version 5.7.0.1, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.0, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.1, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.2, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.3, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.4, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.5, all tests passed.  
+	
+	* dev-cpp/magic_enum: bump v0.6.6, all tests passed.  
+
+	* dev-ada/ada-pretty: bump to version 1.0.0.  
+
+	* dev-ada/protobuf: bump to version 1.0.0, manual test passed.  
+
+	* dev-cpp/gcem: bump to version 1.12.0.  
+
+	* dev-cpp/pretty_print: bump to git version 9999.  
+
+	* dev-ada/ada-keystore: remove 1.2.0 version.  
+
+	* dev-libs/seastar: minor fix 9999 version.  
+
+	* dev-ada/ada-keystore: bump to git version 9999.  
+
+	* dev-ada/ada-keystore: remove 1.1.0 version, mask 1.2.0 version.  
+
+	* dev-ada/ada-keystore: bump to version 1.1.0.  
+
+	* dev-libs/sobjectizer: bump to version 5.7.1-r1  
+
+	* dev-libs/sobjectizer: fix cmake lib path in version 5.7.0.1, migrate to 5.7.0.1-r1
+
+	* dev-libs/seastar: remove experemental coroutines features in version 9999, please, migrate to 9999-r1
+
+	* dev-libs/restinio: new package, 0.6.9 version.
+
 	* dev-libs/restinio: moved to dev-cpp/restinio.  
 
 	* dev-libs/sobjectizer: moved to dev-cpp/sobjectizer.  
@@ -52,123 +141,4 @@
 	* dev-cpp/xlnt: bump to version 1.5.0.  
 
 	* media-fonts/consolas add consolas font.  
-
-
-2020-08-18	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-libs/sobjectizer: bump to version 5.7.1-r1  
-
-	* dev-libs/sobjectizer: fix cmake lib path in version 5.7.0.1, migrate to 5.7.0.1-r1
-
-	* dev-libs/seastar: remove experemental coroutines features in version 9999, please, migrate to 9999-r1
-
-	* dev-libs/restinio: new package, 0.6.9 version.
-
-
-2020-08-08	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-ada/ada-keystore: remove 1.2.0 version.  
-
-	* dev-libs/seastar: minor fix 9999 version.  
-
-	* dev-ada/ada-keystore: bump to git version 9999.  
-
-	* dev-ada/ada-keystore: remove 1.1.0 version, mask 1.2.0 version.  
-
-	* dev-ada/ada-keystore: bump to version 1.1.0.  
-
-
-2020-07-29	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-cpp/gcem: bump to version 1.12.0.  
-
-	* dev-cpp/pretty_print: bump to git version 9999.  
-
-
-2020-06-11	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-ada/ada-pretty: bump to version 1.0.0.  
-
-	* dev-ada/protobuf: bump to version 1.0.0, manual test passed.  
-
-
-2020-06-06	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-cpp/magic_enum: bumps v0.6.{0,1,2,3,4,5,6} :  
-	dev-cpp/magic_enum: bump v0.6.0, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.1, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.2, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.3, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.4, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.5, all tests passed.  
-	dev-cpp/magic_enum: bump v0.6.6, all tests passed.  
-
-
-2020-06-04	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-libs/sobjectizer: bump to version 5.7.0.1, all tests passed.  
-
-
-2020-05-29	Shiz01 <shiz01@tutanota.com>  
-
-	* dev-cpp/sqlpp11: bump to version 0.59, all tests passed.   
-
-	* dev-cpp/date: minor fix 2.4.1 version - add to comile flags '-fPIC'.   
-
-	* dev-cpp/sqlpp11: bump to git version 9999, all tests passed.  
-
-	* dev-cpp/soci: bump to version 4.0.0, tests failed(WTF?).  
-
-	* dev-cpp/soci: bump to git version 9999, tests failed(WTF?).  
-
-	* dev-libs/oatpp: bump to stable version 1.0.0, all tests passed.  
-
-	* dev-libs/oatpp: bump to version 1.1.0, all tests passed.  
-
-	* dev-libs/oatpp: bump to git version 9999, all test passed.  
-
-
-2020-05-28	Shiz01	<shiz01@tutanota.com>  
-
-	* dev-cpp/resource_pool: bump to git version 9999 all is work, tetst passed.  
-
-	* dev-cpp/ozo: fix build & install examples.  
-
-	* dev-cpp/ozo: bump to version 0.1.0.  
-
-
-2020-05-27	Shiz01	<shiz01@tutanota.com>  
-
-	* dev-cpp/sqlpp11: remove fucking shit - dev-cpp/sqlpp11-0.59.  
-
-
-2020-05-26	Shiz01  <shiz01@tutanota.com>  
-	
-	* dev-libs/simdjson: partial correction 0.3.1 version, add arm64 support.  
-
-	* dev-libs/mongo-cxx-driver: minor fix 3.5.0 version.   
-
-	* dev-libs/mongo-cxx-driver: bump to stuble version 3.4.1.  
-
-	* dev-libs/libpqxx: bump to unstable version 7.1.1.  
-
-	* dev-libs/seastar: git 9999 version, remove obsolted options, minor fix build.  
-
-	* games-server/TrinityCore: bump to version 335a, 2020.05.15 snapshot.  
-
-2020-05-18	Shiz01	<shiz01@tutanota.com>  
-
-	* dev-libs/seastar: partial correction git version 9999 - add support c++{14,17,2a}, coroutines.  
-
-	* dev-libs/libpqxx: bump to version 7.1.0, manual tests passed, in ebuild test is not configured.  
-
-	* dev-cpp/date/date: bump to version 2.4.1.  
-
-
-2020-05-15	Shiz01	<shiz01@tutanota.com>  
-	
-	* add CHANGELOG.md 
-
-	* dev-libs/seastar: bump to git version 9999, not all dependencies are indicated.  
-
 
