@@ -7,7 +7,7 @@
 </maintainer>
 <use>
  <flag name="exceptions">Enable simdjson's exception-throwing interface</flag>
- <flag name="fuzzing"></flag>
+ <flag name="fuzzing">Test this pkg with fuzzer.</flag>
  <flag name="sanitize">Build with sanitizer runtimes.</flag>
 </use>
 </pkgmetadata>

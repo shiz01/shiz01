@@ -142,3 +142,6 @@
 
 	* media-fonts/consolas add consolas font.  
 
+	* dev-libs/simdjson: fix description for use flag fuzzing.  
+
+
