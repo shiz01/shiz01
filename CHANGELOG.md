@@ -146,4 +146,8 @@
 
 	* metadata/md5-cache: update metadata.  
 
+	* games-server/TrinityCore: update metadata.xml  
+
+	* _
+
 

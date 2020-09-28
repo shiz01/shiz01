@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>shiz01@tutanota.com</email>
+<name>Shiz01</name>
+</maintainer>
+<use>
+ <flag name="conf">Copy authserver and worldserver .conf.dist files to the project dir</flag>
+ <flag name="clang">Enable and build application targets</flag>
+ <flag name="detal-metrics">Enable detailed metrics reporting (i.e. time each session takes to update)</flag>
+ <flag name="ld-gold">Use GNU gold linker</flag>
+ <flag name="no-support">Disable the GIT testing routines. Only for git 9999 version.</flag>
+ <flag name="pch-scripts">Use precompiled headers when compiling scripts</flag>
+ <flag name="pch-servers">Use precompiled headers when compiling servers</flag>
+ <flag name="servers">Build worldserver and authserver</flag>
+ <flag name="strict-db">Enable strict checking of database field value accessors</flag>
+ <flag name="tools">Build map/vmap/mmap extraction/assembler tools</flag>
+ <flag name="whout-metrics">Disable metrics reporting (i.e. InfluxDB and Grafana)</flag>
+</use>
+</pkgmetadata>
