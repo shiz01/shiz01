@@ -154,5 +154,7 @@
 
 	* games-server/TrinityCore: bump to version 335a 20071.  
 
+	* games-server/TrinityCore: bump to version 335a 20081.  
+
 	*
 
