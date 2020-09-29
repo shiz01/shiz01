@@ -160,5 +160,7 @@
 
 	* games-server/TrinityCore: bump to version 335a 20091.  
 
+	* games-server/TrinityCore: bump git version 335a 99999999.  
+
 	*
 
