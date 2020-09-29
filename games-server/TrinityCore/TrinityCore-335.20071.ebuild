@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils toolchain-funcs llvm
+inherit check-reqs cmake-utils toolchain-funcs llvm
 
 DESCRIPTION="TrinityCore Open Source MMO Framework."
 HOMEPAGE="https://www.trinitycore.org/"
@@ -25,7 +25,8 @@ DEPEND="dev-libs/boost
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-CHECKREQS_DISK_BUILD="1400M"
+CHECKREQS_DISK_BUILD="7800M"
+CHECKREQS_DISK_USR="1400M"
 
 S="${WORKDIR}/${PN}-TDB${PV}"
 

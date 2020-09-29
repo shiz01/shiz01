@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils toolchain-funcs llvm
+inherit check-reqs cmake-utils toolchain-funcs llvm
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
@@ -35,7 +35,8 @@ DEPEND="dev-libs/boost
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-CHECKREQS_DISK_BUILD="1400M"
+CHECKREQS_DISK_BUILD="11G"
+CHECKREQS_DISK_USR="1400M"
 
 src_prepare() {
 	eapply_user
