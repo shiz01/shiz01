@@ -168,5 +168,8 @@
 
 	* dev-cpp/sqlite_orm: fix cmake lib path in version 1.5.   
 
+	* dev-libs/h5cpp: bump to version 1.10.4.  
+
 	*  
+
 
