@@ -164,5 +164,7 @@
 
 	* dev-cpp/sqlpp11: fix keyword in version 9999.  
 
-	*
+	* dev-cpp/sqlite_orm: bump to 1.5 version.  
+
+	* 
 
