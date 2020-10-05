@@ -162,5 +162,7 @@
 
 	* games-server/TrinityCore: bump git version 335a 99999999.  
 
+	* dev-cpp/sqlpp11: fix keyword in version 9999.  
+
 	*
 
