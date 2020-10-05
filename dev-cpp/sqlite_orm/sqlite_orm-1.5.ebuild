@@ -19,18 +19,15 @@ DEPEND="dev-db/sqlite"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-
 src_prepare() {
 	eapply_user
-
 	if ! use examples ; then
 		sed -i "s/add_subdirectory(examples)/#add_subdirectory(examples)/" ${S}/CMakeLists.txt
 	fi
-
 	append-flags -fPIC
+
 	cmake-utils_src_prepare
 }
-
 
 src_configure() {
 	local mycmakeargs=(
@@ -39,5 +36,16 @@ src_configure() {
 	)
 
 	cmake-utils_src_configure
+}
+
+src_install() {
+	DESTDIR=${D} cmake-utils_src_install
+	mv "${ED}/usr/lib" "${ED}/usr/$(get_libdir)"
+
+	local work_dir="${ED}/usr/$(get_libdir)/cmake/${PN}"
+	local sed_str="s/lib\/cmake\/sqlite_orm/$(get_libdir)\/cmake\/sqlite_orm/"
+
+	sed -i "${sed_str}" "${work_dir}/SqliteOrmConfig.cmake"
+	sed -i "${sed_str}" "${work_dir}/SqliteOrmTargets.cmake"
 }
 

@@ -166,5 +166,7 @@
 
 	* dev-cpp/sqlite_orm: bump to 1.5 version.  
 
-	* 
+	* dev-cpp/sqlite_orm: fix cmake lib path in version 1.5.   
+
+	*  
 
