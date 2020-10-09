@@ -5,11 +5,10 @@ EAPI=7
 
 inherit cmake-utils
 
-DESCRIPTION="An object oriented C++ wrapper for CURL"
-HOMEPAGE="https://josephp91.github.io/curlcpp"
+DESCRIPTION="C++ wrapper around libcURL."
+HOMEPAGE="http://www.curlpp.org"
 SRC_URI="https://github.com/jpbarrette/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-#SRC_URI="https://github.com/JosephP91/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

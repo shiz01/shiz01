@@ -170,6 +170,8 @@
 
 	* dev-libs/h5cpp: bump to version 1.10.4.  
 
-	*  
+	* dev-cpp/curlpp: fix descrition in version 0.8.1.  
+
+	*   
 
 
