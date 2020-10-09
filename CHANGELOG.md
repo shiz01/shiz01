@@ -174,6 +174,8 @@
 
 	* dev-libs/libpqxx: fix tests in versions 7.1.{0,1,2}.  
 
-	*  
+	* dev-libs/libpqxx: bump to version 7.2.0.  
+
+	*
 
 
