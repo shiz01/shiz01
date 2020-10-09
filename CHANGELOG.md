@@ -172,6 +172,8 @@
 
 	* dev-cpp/curlpp: fix descrition in version 0.8.1.  
 
-	*   
+	* dev-libs/libpqxx: fix tests in versions 7.1.{0,1,2}.  
+
+	*  
 
 
