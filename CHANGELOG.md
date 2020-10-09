@@ -176,6 +176,8 @@
 
 	* dev-libs/libpqxx: bump to version 7.2.0.  
 
-	*
+	* dev-cpp/gcem: bump to version 1.13.1. 
 
+	* 
 
+	
