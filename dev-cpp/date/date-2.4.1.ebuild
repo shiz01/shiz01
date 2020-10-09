@@ -11,7 +11,7 @@ SRC_URI="https://github.com/HowardHinnant/${PN}/archive/v2.4.1.tar.gz -> ${P}.ta
 KEYWORDS="~amd64 ~arm64 ~x86"
 
 LICENSE="MIT"
-SLOT="0"
+SLOT="0/2"
 
 IUSE="test"
 RESTRICT="!test? ( test )"

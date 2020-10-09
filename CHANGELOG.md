@@ -178,6 +178,7 @@
 
 	* dev-cpp/gcem: bump to version 1.13.1. 
 
-	* 
+	* dev-cpp/date: fix slot in version 2.4.1.  
 
-	
+	*
+
