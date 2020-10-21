@@ -7,7 +7,7 @@ inherit cmake-utils
 
 DESCRIPTION="C++ Requests: Curl for People, a spiritual port of Python Requests."
 HOMEPAGE="https://whoshuu.github.io/cpr"
-SRC_URI="https://github.com/whoshuu/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/whoshuu/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -22,6 +22,9 @@ RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}
 		test? ( dev-cpp/gtest )
 "
+
+PATCHES=("${FILESDIR}/0001-Fix-build-on-Gentoo.patch")
+
 
 src_prepare() {
 	eapply_user
@@ -44,10 +47,8 @@ src_configure() {
 }
 
 src_install() {
-
 	DESTDIR=${D} cmake-utils_src_install
 	mkdir -p "${ED}/usr/$(get_libdir)/cmake"
 	cp "${WORKDIR}/${P}/cpr-config.cmake" "${ED}/usr/$(get_libdir)/cmake/"
-
 }
 

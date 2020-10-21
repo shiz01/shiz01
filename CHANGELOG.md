@@ -180,5 +180,8 @@
 
 	* dev-cpp/date: fix slot in version 2.4.1.  
 
-	*
+	* dev-cpp/cpr: bump to version 1.5.2.  
+
+	* dev-cpp/cpr: remove version 1.5.1.  
+
 
