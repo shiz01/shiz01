@@ -17,11 +17,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE="examples static-libs test"
 RESTRICT="!test? ( test )"
 
-DEPEND="sys-devel/gcc[cxx]"
-RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
-
-
 src_prepare() {
 	eapply_user
 	append-flags -fPIC
