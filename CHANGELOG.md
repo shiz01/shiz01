@@ -190,3 +190,7 @@
 
 	* dev-cpp/magic_enum: fix path in versions 0.6.{0,1,2,3,4,5,6}.  
 
+	* dev-cpp/magic_enum: bump to version 0.7.0.  
+
+	*
+
