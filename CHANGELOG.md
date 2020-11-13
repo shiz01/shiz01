@@ -192,5 +192,7 @@
 
 	* dev-cpp/magic_enum: bump to version 0.7.0.  
 
-	*
+	* dev-cpp/sqlite_orm: bump to version 1.6.  
+
+	*  
 
