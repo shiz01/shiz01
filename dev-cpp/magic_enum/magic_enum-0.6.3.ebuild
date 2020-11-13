@@ -15,9 +15,12 @@ KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="examples test"
 RESTRICT="!test? ( test )"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
+src_prepare() {
+	eapply_user
+	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
+	append-flags -fPIC
+	cmake-utils_src_prepare
+}
 
 src_configure() {
 	local mycmakeargs=( 

@@ -188,5 +188,5 @@
 	
 	* dev-cpp/amqp-cpp: add new package version 4.3.8.  
 
-	* 
+	* dev-cpp/magic_enum: fix path in versions 0.6.{0,1,2,3,4,5,6}.  
 
