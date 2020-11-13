@@ -196,6 +196,8 @@
 
 	* media-libs/libsquish: add new package version 1.15.  
 
-	* 
+	* dev-cpp/sol2: add new package version 3.2.2.  
+
+	*  
 
 
