@@ -20,10 +20,8 @@ S="${WORKDIR}/${big_name}-${PV}"
 
 src_prepare() {
 	eapply_user
-	local target_="${S}/CMakeLists.txt"
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
 	sed -i "s/DESTINATION\ cmake/DESTINATION\ $(get_libdir)\/cmake/" ${S}/CMakeLists.txt
-
 	append-flags -fPIC
 	cmake-utils_src_prepare
 }
