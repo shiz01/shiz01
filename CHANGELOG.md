@@ -185,4 +185,8 @@
 	* dev-cpp/cpr: remove version 1.5.1.  
 
 	* dev-cpp/sobjectizer: fix depends, remove hard depend gcc[cxx]
+	
+	* dev-cpp/amqp-cpp: add new package version 4.3.8.  
+
+	* 
 
