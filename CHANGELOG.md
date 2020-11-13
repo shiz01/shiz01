@@ -194,5 +194,8 @@
 
 	* dev-cpp/sqlite_orm: bump to version 1.6.  
 
-	*  
+	* media-libs/libsquish: add new package version 1.15.  
+
+	* 
+
 
