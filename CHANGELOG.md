@@ -198,6 +198,6 @@
 
 	* dev-cpp/sol2: add new package version 3.2.2.  
 
-	*  
+	* dev-cpp/folly: add new package, version 2020.11.16.00.  
 
 
