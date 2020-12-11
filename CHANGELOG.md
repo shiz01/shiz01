@@ -200,4 +200,6 @@
 
 	* dev-cpp/folly: add new package, version 2020.11.16.00.  
 
+	* games-server/TrinityCore: bump to 335.{20101,20111}. Add support boost-1.74.
+
 
