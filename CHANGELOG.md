@@ -202,4 +202,7 @@
 
 	* games-server/TrinityCore: bump to 335.{20101,20111}. Add support boost-1.74.
 
+	* games-server/TrinityCore: in versions 335.200{51,61,71,81,91} add check version dev-libs/boost. dev-libs/boost-1.74 not supported.
+
+	*
 

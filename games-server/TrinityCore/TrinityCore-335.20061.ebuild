@@ -17,7 +17,7 @@ IUSE="cpu_flags_x86_sse2 debug +doc +pch-scripts +pch-servers +servers strict-db
 RESTRICT="!test? ( test )"
 REQUIRED_USE="cpu_flags_x86_sse2"
 
-DEPEND="dev-libs/boost
+DEPEND="<=dev-libs/boost-1.74
 		dev-db/mysql-connector-c
 		sys-libs/zlib
 		dev-libs/openssl
