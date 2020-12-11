@@ -204,5 +204,7 @@
 
 	* games-server/TrinityCore: in versions 335.200{51,61,71,81,91} add check version dev-libs/boost. dev-libs/boost-1.74 not supported.
 
-	*
+	* dev-cpp/CLI11: add new package, version 1.9.1.
+
+	* 
 
