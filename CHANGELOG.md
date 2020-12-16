@@ -210,6 +210,7 @@
 
 	* dev-cpp/folly: bump to version 2020.12.14.00.  
 	
-	*
+	* dev-cpp/sobjectizer: bump to version 5.7.2.  
 
+	*  
 
