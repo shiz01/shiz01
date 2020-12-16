@@ -226,5 +226,10 @@
 
 	* dev-libs/pocl: fix user path, add eapply_user in 1.4 version.  
 
-	*
+	* dev-libs/pocl: bump to versions 1.{5,6}.  
+
+	*  
+
+	*  
+
 
