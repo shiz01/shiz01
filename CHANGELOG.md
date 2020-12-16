@@ -230,8 +230,9 @@
 
 	* dev-libs/oatpp: bump to version 1.2.0.  
 
-	*  
+	* dev-libs/simdjson: bump to version 0.6.1.   
 
 	*  
 
+	*
 
