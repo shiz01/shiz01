@@ -220,7 +220,7 @@
 	
 	* dev-cpp/sqlpp11: bump to version 0.60.  
 
-	* dev-libs/libpqxx: bump to version  7.2.1.  
+	* dev-libs/libpqxx: bump to version 7.2.1.  
 
 	* dev-libs/mongo-cxx-driver: bump to version 3.6.{1,2}.  
 
@@ -234,5 +234,5 @@
 
 	* dev-libs/clickhouse-cpp: add new package, version 1.4.1.  
 
-	*
+	* games-server/TrinityCore: bump to version 335.20121.  
 
