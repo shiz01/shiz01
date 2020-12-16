@@ -228,6 +228,8 @@
 
 	* dev-libs/pocl: bump to versions 1.{5,6}.  
 
+	* dev-libs/oatpp: bump to version 1.2.0.  
+
 	*  
 
 	*  
