@@ -212,5 +212,9 @@
 	
 	* dev-cpp/sobjectizer: bump to version 5.7.2.  
 
-	*  
+	* dev-cpp/restinio: bump to versions 0.6.{11,12}.  
+	
+	*   
+
+	*   
 
