@@ -216,5 +216,10 @@
 	
 	* dev-cpp/soci: bump to version 4.0.1.  
 
-	*   
+	* dev-cpp/magic_enum: bump to version 0.7.1.  
+	
+	*  
+
+	*  
+
 
