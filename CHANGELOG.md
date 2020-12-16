@@ -222,8 +222,9 @@
 
 	* dev-libs/libpqxx: bump to version  7.2.1.  
 
-	*  
+	* dev-libs/mongo-cxx-driver: bump to version 3.6.{1,2}.  
 
 	*   
 
+	*
 
