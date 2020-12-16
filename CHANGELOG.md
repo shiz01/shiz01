@@ -214,7 +214,7 @@
 
 	* dev-cpp/restinio: bump to versions 0.6.{11,12}.  
 	
-	*   
+	* dev-cpp/soci: bump to version 4.0.1.  
 
 	*   
 
