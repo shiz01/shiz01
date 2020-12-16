@@ -224,7 +224,7 @@
 
 	* dev-libs/mongo-cxx-driver: bump to version 3.6.{1,2}.  
 
-	*   
+	* dev-libs/pocl: fix user path, add eapply_user in 1.4 version.  
 
 	*
 

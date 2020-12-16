@@ -33,6 +33,8 @@ pkg_setup() {
 }
 
 src_prepare() {
+	eapply_user
+
 	append-flags -fPIC
 	cmake-utils_src_prepare
 }
