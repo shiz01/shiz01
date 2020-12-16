@@ -232,7 +232,7 @@
 
 	* dev-libs/simdjson: bump to version 0.6.1.   
 
-	*  
+	* dev-libs/clickhouse-cpp: add new package, version 1.4.1.  
 
 	*
 

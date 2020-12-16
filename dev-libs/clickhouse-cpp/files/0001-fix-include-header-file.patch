@@ -1,0 +1,24 @@
+From 533032d155c0c7b940179b8875a7c3264bf57fc0 Mon Sep 17 00:00:00 2001
+From: shiz01 <shiz01@tutanota.com>
+Date: Sat, 28 Nov 2020 20:19:10 +0700
+Subject: [PATCH] fix include header file
+
+Signed-off-by: shiz01 <shiz01@tutanota.com>
+---
+ clickhouse/types/types.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/clickhouse/types/types.cpp b/clickhouse/types/types.cpp
+index 0eaf939..1364b7d 100644
+--- a/clickhouse/types/types.cpp
++++ b/clickhouse/types/types.cpp
+@@ -1,5 +1,5 @@
+ #include "types.h"
+-
++#include <stdexcept>
+ #include <assert.h>
+ 
+ namespace clickhouse {
+-- 
+2.26.2
+
