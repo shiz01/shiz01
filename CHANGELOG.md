@@ -206,5 +206,10 @@
 
 	* dev-cpp/CLI11: add new package, version 1.9.1.
 
-	* 
+	* dev-cpp/amqp-cpp: bump to versions 4.3.{9,10}.  
+
+	*  
+	
+	*
+
 
