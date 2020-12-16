@@ -208,7 +208,7 @@
 
 	* dev-cpp/amqp-cpp: bump to versions 4.3.{9,10}.  
 
-	*  
+	* dev-cpp/folly: bump to version 2020.12.14.00.  
 	
 	*
 
