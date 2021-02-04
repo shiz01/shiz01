@@ -260,6 +260,8 @@
 	
 	* dev-cpp/jwt-cpp: add new package, version 0.5.0 release candidate.  
 
-	*
+	* dev-cpp/readerwriterqueue: add new package, version 1.0.3.  
+
+	* 
 
 
