@@ -262,6 +262,8 @@
 
 	* dev-cpp/readerwriterqueue: add new package, version 1.0.3.  
 
+	* dev-cpp/libcds: add new package, version 2.3.3.  
+
 	* 
 
 
