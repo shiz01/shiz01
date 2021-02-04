@@ -248,6 +248,8 @@
 
 	* dev-cpp/concurrentqueue: add new package, version 1.0.2.  
 
+	* dev-cpp/cr: add new package, commit 2020.08.28.  
+
 	*  
 
 
