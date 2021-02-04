@@ -266,4 +266,7 @@
 
 	* remove old ada.
 
+	* dev-cpp/uvw: add new package, version 2.8.0.  
+
+	*  
 

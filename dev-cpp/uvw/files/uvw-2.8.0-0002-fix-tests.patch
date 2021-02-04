@@ -1,0 +1,34 @@
+From a68ce6bb11b5aa2e552bf7d021bf74536d000948 Mon Sep 17 00:00:00 2001
+From: shiz01 <shiz01@tutanota.com>
+Date: Thu, 4 Feb 2021 20:46:52 +0700
+Subject: [PATCH] fix tests
+
+---
+ test/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 4dc69d6..202db09 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -48,7 +48,7 @@ function(ADD_UVW_TEST TEST_NAME TEST_SOURCE)
+         ${TEST_NAME}
+         PRIVATE
+             $<$<TARGET_EXISTS:uvw::uvw>:uvw::uvw>
+-            $<$<TARGET_EXISTS:uvw::uvw>:uv::uv-static>
++            uv
+             $<$<TARGET_EXISTS:uvw::uvw-static>:uvw::uvw-static>
+             GTest::Main
+             Threads::Threads
+@@ -78,7 +78,7 @@ endfunction()
+ function(ADD_UVW_LIB_TEST TEST_NAME TEST_SOURCE)
+     ADD_UVW_TEST(${TEST_NAME} ${TEST_SOURCE})
+     target_link_libraries(${TEST_NAME} PRIVATE ${CMAKE_DL_LIBS})
+-    target_compile_definitions(${TEST_NAME} PRIVATE TARGET_LIB_SO="$<TARGET_FILE:uv>")
++    target_compile_definitions(${TEST_NAME} PRIVATE TARGET_LIB_SO="uv")
+ endfunction()
+ 
+ # List of available targets
+-- 
+2.26.2
+
