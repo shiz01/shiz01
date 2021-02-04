@@ -236,3 +236,5 @@
 
 	* games-server/TrinityCore: bump to version 335.20121.  
 
+	* dev-cpp/GuiLite: add new package.  
+
