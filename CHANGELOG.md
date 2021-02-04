@@ -238,12 +238,13 @@
 
 	* dev-cpp/GuiLite: add new package.  
 
-	* dev-cpp/mio: add new package.
+	* dev-cpp/mio: add new package.  
 
-	* dev-cpp/sol2: fix LUA_TARGETS in sol2-3.2.2.
+	* dev-cpp/sol2: fix LUA_TARGETS in sol2-3.2.2.  
 
-	* media-libs/minimp3: add new package, commit 2012.01.20.
+	* media-libs/minimp3: add new package, commit 2012.01.20.  
+
+	* dev-cpp/backward-cpp: add new package, version 1.5.  
 
 	*
-
 
