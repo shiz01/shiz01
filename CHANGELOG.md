@@ -246,5 +246,8 @@
 
 	* dev-cpp/backward-cpp: add new package, version 1.5.  
 
-	*
+	* dev-cpp/concurrentqueue: add new package, version 1.0.2.  
+
+	*  
+
 
