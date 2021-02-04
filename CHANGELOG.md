@@ -238,3 +238,6 @@
 
 	* dev-cpp/GuiLite: add new package.  
 
+	* dev-cpp/mio: add new package.
+
+
