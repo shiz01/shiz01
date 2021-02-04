@@ -250,6 +250,8 @@
 
 	* dev-cpp/cr: add new package, commit 2020.08.28.  
 
-	*  
+	* dev-cpp/fast-cpp-csv-parser: add new package, commit 2021.01.03.  
+
+	*   
 
 
