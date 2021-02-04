@@ -264,6 +264,6 @@
 
 	* dev-cpp/libcds: add new package, version 2.3.3.  
 
-	* 
+	* remove old ada.
 
 
