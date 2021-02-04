@@ -254,4 +254,8 @@
 
 	* dev-cpp/filesystem: add new package, version 1.4.0.   
 
+	* dev-cpp/gzip-hpp: add new package, commit 2020.12.02.  
+
+	*
+
 
