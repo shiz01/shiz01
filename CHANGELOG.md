@@ -240,4 +240,6 @@
 
 	* dev-cpp/mio: add new package.
 
+	* dev-cpp/sol2: fix LUA_TARGETS in sol2-3.2.2.
+
 
