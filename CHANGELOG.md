@@ -256,6 +256,10 @@
 
 	* dev-cpp/gzip-hpp: add new package, commit 2020.12.02.  
 
+	* dev-cpp/jwt-cpp: add new package, version 0.4.0.  
+	
+	* dev-cpp/jwt-cpp: add new package, version 0.5.0 release candidate.  
+
 	*
 
 
