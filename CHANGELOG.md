@@ -268,5 +268,7 @@
 
 	* dev-cpp/uvw: add new package, version 2.8.0.  
 
+	* dev-cpp/propagate_const: add new package, commit version 2021.01.10.  
+
 	*  
 
