@@ -5,8 +5,8 @@ EAPI=7
 
 inherit cmake
 
-DESCRIPTION="A C++ compile-time math library using generalized constant expressions."
-HOMEPAGE="https://www.kthohr.com/gcem.html"
+DESCRIPTION="A beautiful stack trace pretty printer for C++"
+HOMEPAGE="https://github.com/bombela/backward-cpp"
 SRC_URI="https://github.com/bombela/backward-cpp/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
