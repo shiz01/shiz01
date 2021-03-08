@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="CLI11 is a command line parser for C++11 and beyond..."
 HOMEPAGE="https://github.com/CLIUtils/CLI11"
@@ -20,6 +20,6 @@ src_configure() {
 		-DCLI11_BUILD_TESTS=$(usex test)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

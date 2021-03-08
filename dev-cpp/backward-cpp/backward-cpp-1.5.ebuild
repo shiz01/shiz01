@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="A C++ compile-time math library using generalized constant expressions."
 HOMEPAGE="https://www.kthohr.com/gcem.html"

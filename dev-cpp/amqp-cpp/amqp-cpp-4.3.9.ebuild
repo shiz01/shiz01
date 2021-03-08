@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 big_name="AMQP-CPP"
 
@@ -23,7 +23,7 @@ src_prepare() {
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
 	sed -i "s/DESTINATION\ cmake/DESTINATION\ $(get_libdir)\/cmake/" ${S}/CMakeLists.txt
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -32,6 +32,6 @@ src_configure() {
 		-D${big_name}_BUILD_SHARED=$(usex shared)
 		-D${big_name}_LINUX_TCP=$(usex linux_tcp)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

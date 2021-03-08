@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="A type safe SQL template library for C++"
 HOMEPAGE="https://github.com/rbock/sqlpp11"
@@ -40,7 +40,7 @@ src_prepare() {
 	done
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 
 }
 
@@ -48,6 +48,6 @@ src_configure() {
 	local mycmakeargs=( 
 		-DENABLE_TESTS=$(usex test)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 
 }

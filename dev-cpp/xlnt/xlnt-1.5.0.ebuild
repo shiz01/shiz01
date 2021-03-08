@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Cross-platform user-friendly xlsx library for C++11"
 HOMEPAGE="https://github.com/tfussell/xlnt"
@@ -33,7 +33,7 @@ src_configure() {
 		)
 	fi
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 

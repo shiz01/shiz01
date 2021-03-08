@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="A C++ library of Concurrent Data Structures."
 HOMEPAGE="https://github.com/khizmax/libcds"
@@ -36,7 +36,7 @@ src_configure() {
 		-DENABLE_STRESS_TEST=$(usex strees_test)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 

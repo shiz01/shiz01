@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="PostgreSQL connector for sqlpp11 library"
 HOMEPAGE="https://github.com/matthijs/sqlpp11-connector-postgresql"
@@ -25,14 +25,14 @@ src_prepare() {
 	eapply_user
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_TESTS=$(usex test)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 
 }
 

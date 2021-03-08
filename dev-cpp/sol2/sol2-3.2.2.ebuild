@@ -5,7 +5,7 @@ EAPI=7
 
 LUA_COMPAT=( lua5-{1..4} luajit )
 
-inherit cmake-utils lua
+inherit cmake lua
 
 DESCRIPTION="Lua API wrapper with advanced features and top notch performance."
 HOMEPAGE="https://github.com/ThePhD/sol2"

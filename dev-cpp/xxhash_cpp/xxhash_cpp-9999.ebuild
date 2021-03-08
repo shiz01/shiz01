@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Port of the xxhash library to C++17."
 HOMEPAGE="https://github.com/RedSpah/xxhash_cpp"
@@ -28,6 +28,6 @@ src_configure() {
 	local mycmakeargs=(
 		-DBUILD_TESTING=$(usex test)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

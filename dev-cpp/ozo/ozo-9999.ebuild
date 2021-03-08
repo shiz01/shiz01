@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="OZO is a C++17 header-only library for asyncronous communication with PostgreSQL"
 HOMEPAGE="https://github.com/yandex/ozo"
@@ -27,7 +27,7 @@ src_prepare() {
 
 	use examples && append-flags "-Wno-error=pedantic"
 
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -36,7 +36,7 @@ src_configure() {
 		-DOZO_BUILD_EXAMPLES=$(usex examples)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 

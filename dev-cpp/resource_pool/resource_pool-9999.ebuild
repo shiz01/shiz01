@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="C++ header only library purposed to create pool of some resources."
 HOMEPAGE="https://github.com/elsid/resource_pool"
@@ -22,7 +22,7 @@ src_prepare() {
 	eapply_user
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -32,6 +32,6 @@ src_configure() {
 		-DRESOURCE_POOL_BUILD_BENCHMARKS=OFF
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

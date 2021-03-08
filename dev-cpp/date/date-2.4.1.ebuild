@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="A date and time library based on the C++11/14/17 <chrono> header"
 HOMEPAGE="https://github.com/HowardHinnant/date"
@@ -25,6 +25,6 @@ src_prepare() {
 	eapply_user
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 

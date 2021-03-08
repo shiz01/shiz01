@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="C++ Requests: Curl for People, a spiritual port of Python Requests."
 HOMEPAGE="https://whoshuu.github.io/cpr"
@@ -29,7 +29,7 @@ PATCHES=("${FILESDIR}/0001-Fix-build-on-Gentoo.patch")
 src_prepare() {
 	eapply_user
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -43,11 +43,11 @@ src_configure() {
 		-DUSE_WINSSL=$(usex winssl)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 	mkdir -p "${ED}/usr/$(get_libdir)/cmake"
 	cp "${WORKDIR}/${P}/cpr-config.cmake" "${ED}/usr/$(get_libdir)/cmake/"
 }

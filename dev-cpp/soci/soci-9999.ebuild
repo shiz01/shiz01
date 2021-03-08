@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="The C++ Database Access Library"
 HOMEPAGE="http://soci.sourceforge.net/"
@@ -28,7 +28,7 @@ src_prepare() {
 	eapply_user
 
 	append-flags "-fPIC"
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -39,10 +39,10 @@ src_configure() {
 			-DSOCI_ASAN=$(usex profile)
 			-DSOCI_TESTS=$(usex test)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 
 	mkdir -p "${ED}/usr/$(get_libdir)/cmake"
 	mv "${ED}/usr/cmake/SOCI.cmake" "${ED}/usr/$(get_libdir)/cmake/SOCI.cmake"

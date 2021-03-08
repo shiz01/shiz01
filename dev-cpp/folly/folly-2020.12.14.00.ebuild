@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="An open-source C++ library developed and used at Facebook."
 HOMEPAGE="https://github.com/facebook/folly"
@@ -36,7 +36,7 @@ src_prepare() {
 	sed -i "s/INSTALL_DIR\ lib/INSTALL_DIR\ $(get_libdir)/" "${S}/CMakeLists.txt"
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -44,6 +44,6 @@ src_configure() {
 		-DBUILD_SHARED_LIBS=$(usex shared)
 #		-DPYTHON_EXTENSIONS=$(usex python)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

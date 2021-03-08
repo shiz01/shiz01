@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="C++ Actor framework"
 HOMEPAGE="https://stiffstream.com/en/products/sobjectizer.html"
@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 src_prepare() {
 	eapply_user
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -30,11 +30,11 @@ src_configure() {
 		-DSOBJECTIZER_BUILD_STATIC=$(usex static-libs)
 		-DSOBJECTIZER_BUILD_SHARED=ON
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 	mv "${ED}/usr/lib" "${ED}/usr/$(get_libdir)"
 
 	local path_to_patch="${ED}/usr/$(get_libdir)/cmake/${PN}"

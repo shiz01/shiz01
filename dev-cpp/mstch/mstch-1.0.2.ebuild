@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="mstch is a complete implementation of {{mustache}} templates using modern C++"
 HOMEPAGE="https://github.com/no1msd/mstch"
@@ -22,7 +22,7 @@ src_prepare() {
 	eapply_user
 	sed -i "s/DESTINATION lib/DESTINATION $(get_libdir)/" ${S}/src/CMakeLists.txt
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 
@@ -32,7 +32,7 @@ src_configure() {
 		-DWITH_BENCHMARK=OFF
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 

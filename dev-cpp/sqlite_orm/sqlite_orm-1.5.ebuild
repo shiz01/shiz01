@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="SQLite ORM light header only library for modern C++"
 HOMEPAGE="https://github.com/fnc12/sqlite_orm"
@@ -26,7 +26,7 @@ src_prepare() {
 	fi
 	append-flags -fPIC
 
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -35,11 +35,11 @@ src_configure() {
 		-DSqliteOrm_BuildTests=$(usex test)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 	mv "${ED}/usr/lib" "${ED}/usr/$(get_libdir)"
 
 	local work_dir="${ED}/usr/$(get_libdir)/cmake/${PN}"

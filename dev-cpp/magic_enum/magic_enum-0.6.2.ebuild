@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Static reflection for enums (to string, from string, iteration) for modern C++"
 HOMEPAGE="https://github.com/Neargye/magic_enum"
@@ -19,7 +19,7 @@ src_prepare() {
 	eapply_user
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -28,6 +28,6 @@ src_configure() {
 		-DMAGIC_ENUM_OPT_BUILD_TESTS=$(usex test)
 		)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
