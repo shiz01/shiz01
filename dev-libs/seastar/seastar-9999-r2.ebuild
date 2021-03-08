@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit check-reqs cmake-utils toolchain-funcs
+inherit check-reqs cmake toolchain-funcs
 
 DESCRIPTION="High performance server-side application framework."
 HOMEPAGE="http://seastar.io/"
@@ -22,12 +22,12 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 # coroutines is removed.
-IUSE="+apps +c++17 -c++2a doc dpdk examples +hwloc numa profile +sstring test"
+IUSE="+apps +c++17 -c++20 doc dpdk examples +hwloc numa profile +sstring test"
 
 RESTRICT="!test? ( test )"
 
-REQUIRED_USE="^^ ( c++17 c++2a )"
-#	coroutines? ( c++2a !c++17 )"
+REQUIRED_USE="^^ ( c++17 c++20 )"
+#	coroutines? ( c++20 !c++17 )"
 
 DEPEND="dev-libs/boost
 		net-dns/c-ares
@@ -40,7 +40,7 @@ DEPEND="dev-libs/boost
 		dev-cpp/yaml-cpp
 
 		c++17? ( || ( >=sys-devel/gcc-8.2 >=sys-devel/clang-7 ) )
-		c++2a? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) )
+		c++20? ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-10 ) )
 		hwloc? ( sys-apps/hwloc )
 		dpdk? ( net-libs/dpdk )
 		numa? ( sys-process/numact )
@@ -59,26 +59,8 @@ src_prepare() {
 		die "Error, clang does not support concept.";
 	fi
 
-# REMOVED.
-#	if use coroutines ; then
-#	
-#		if $(tc-is-clang) ; then
-#			if [[ $(($(clang-major-version))) < 10 ]] ; then
-#				die "Error, clang version below 10 does not support coroutines"
-#			fi
-#		fi
-#
-#		if $(tc-is-gcc) ; then
-#			if [[ $(($(gcc-major-version))) < 10 ]]; then 
-#				die "Error, gcc version below 10 does not support coroutines"
-#			else
-#				sed -i 's/-fcoroutines-ts/-fcoroutines/' ${S}/CMakeLists.txt
-#			fi
-#		fi
-#	fi
-
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -95,18 +77,18 @@ src_configure() {
 		-DSeastar_TESTING=$(usex test)
 	)
 
-	if use c++17 && ! use c++2a ; then 
+	if use c++17 && ! use c++20 ; then 
 		mycmakeargs+=( 
 		-DSeastar_CXX_DIALECT="gnu++17"
 #		-DSeastar_EXPERIMENTAL_COROUTINES_TS=OFF	removed.
 		)
-	elif use c++2a && ! use c++17 ; then 
+	elif use c++20 && ! use c++17 ; then 
 		mycmakeargs+=( 
-		-DSeastar_CXX_DIALECT="gnu++2a"
+		-DSeastar_CXX_DIALECT="gnu++20"
 #		-DSeastar_EXPERIMENTAL_COROUTINES_TS=$(usex coroutines) removed.
 		)
 	fi
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
