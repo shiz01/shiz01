@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
 
-DEPEND=">=dev-libs/mongo-c-driver-1.15.0
+DEPEND=">=dev-libs/mongo-c-driver-1.17.0
 		dev-libs/boost
 "
 RDEPEND="${DEPEND}"
