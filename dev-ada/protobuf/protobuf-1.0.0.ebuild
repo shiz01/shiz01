@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ADA_COMPAT=( gnat_201{6,7,8,9} )
+ADA_COMPAT=( gnat_201{6,7,8,9} gnat_2020 )
 
 inherit ada multiprocessing
 
@@ -17,8 +17,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-libs/protobuf
-		dev-ada/matreshka
-		dev-ada/ada-pretty
+		dev-ada/matreshka[${ADA_USEDEP}]
+		dev-ada/ada-pretty[${ADA_USEDEP}]
 "
 
 RDEPEND="${DEPEND}"
