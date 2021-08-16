@@ -14,7 +14,7 @@ SRC_URI="https://github.com/CopernicaMarketingSoftware/${big_name}/archive/v${PV
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="examples linux_tcp +shared"
 
 S="${WORKDIR}/${big_name}-${PV}"
