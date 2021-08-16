@@ -6,6 +6,7 @@ EAPI=7
 inherit cmake
 
 big_name="AMQP-CPP"
+small_cmake_name="amqpcpp"
 
 DESCRIPTION="C++ library for asynchronous non-blocking communication with RabbitMQ"
 HOMEPAGE="https://github.com/CopernicaMarketingSoftware/AMQP-CPP"
@@ -21,7 +22,7 @@ S="${WORKDIR}/${big_name}-${PV}"
 src_prepare() {
 	eapply_user
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
-	sed -i "s/DESTINATION\ cmake/DESTINATION\ $(get_libdir)\/cmake/" ${S}/CMakeLists.txt
+	sed -i "s/DESTINATION\ cmake/DESTINATION\ $(get_libdir)\/cmake\/${small_cmake_name}/" ${S}/CMakeLists.txt
 	append-flags -fPIC
 	cmake_src_prepare
 }
