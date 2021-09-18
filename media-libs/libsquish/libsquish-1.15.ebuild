@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Open source DXT compression library."
 HOMEPAGE="https://sourceforge.net/projects/libsquish/"
@@ -26,7 +26,7 @@ src_prepare() {
 	eapply_user
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/CMakeLists.txt
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -36,6 +36,6 @@ src_configure() {
 		-DBUILD_SQUISH_WITH_SSE2=$(usex cpu_flags_x86_sse2)
 		-DBUILD_SQUISH_WITH_OPENMP=$(usex openmp)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
