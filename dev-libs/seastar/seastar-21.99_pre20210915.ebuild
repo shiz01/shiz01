@@ -3,27 +3,18 @@
 
 EAPI=8
 
-inherit check-reqs cmake toolchain-funcs
+inherit git-r3 check-reqs cmake toolchain-funcs
 
 DESCRIPTION="High performance server-side application framework."
 HOMEPAGE="http://seastar.io/"
+EGIT_REPO_URI="https://github.com/scylladb/seastar"
+EGIT_COMMIT="1da6dbca1ad47532125fcb40a519e0939ed924ef"
 
-if [[ ${PV} == 9999 ]]; then
-	inherit git-r3
-	KEYWORDS=""
-	EGIT_BRANCH="master"
-	EGIT_REPO_URI="https://github.com/scylladb/${PN}"
-else
-	SRC_URI="https://github.com/scylladb/${PN}/archive/${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm64 ~amd64-linux"
-fi
-
+KEYWORDS="~amd64 ~arm64 ~amd64-linux"
 LICENSE="Apache-2.0"
 SLOT="0"
 
-# coroutines is removed.
 IUSE="+apps doc dpdk examples +hwloc numa profile +sstring test"
-
 RESTRICT="!test? ( test )"
 
 DEPEND="dev-libs/boost
@@ -67,7 +58,7 @@ src_configure() {
 		-DSeastar_ALLOC_FAILURE_INJECTION=$(usex profile)
 		-DSeastar_TESTING=$(usex test)
 		-DSeastar_CXX_DIALECT="gnu++20"
-	)
+		)
 
 	cmake_src_configure
 }
