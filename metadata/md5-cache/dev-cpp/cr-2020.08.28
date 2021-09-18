@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=cr.h: A Simple C Hot Reload Header-only Library.
+EAPI=8
+HOMEPAGE=https://github.com/fungos/cr
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=MIT
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=3cce6d54715f6767873484ddb00aef1b

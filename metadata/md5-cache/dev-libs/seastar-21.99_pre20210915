@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-11 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact ) >=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare pretend setup test unpack
+DEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-11 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact )
+DESCRIPTION=High performance server-side application framework.
+EAPI=8
+HOMEPAGE=http://seastar.io/
+IUSE=+apps doc dpdk examples +hwloc numa profile +sstring test
+KEYWORDS=~amd64 ~arm64 ~amd64-linux
+LICENSE=Apache-2.0
+PROPERTIES=live
+RDEPEND=dev-libs/boost net-dns/c-ares dev-libs/crypto++ dev-libs/libfmt app-arch/lz4 net-libs/gnutls net-misc/lksctp-tools dev-libs/protobuf dev-cpp/yaml-cpp ( || ( >=sys-devel/gcc-10 >=sys-devel/clang-11 ) ) hwloc? ( sys-apps/hwloc ) dpdk? ( net-libs/dpdk ) numa? ( sys-process/numact )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=check-reqs	bfb51de63b0462097e40436214dd43c8	cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=8420ced32cfa2ab4e6f9a30aa1f5dc59

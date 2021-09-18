@@ -1,0 +1,14 @@
+BDEPEND=>=dev-libs/libuv-1.40 <dev-libs/libuv-1.41 dev-libs/openssl dev-util/ninja >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=dev-libs/libuv-1.40 <dev-libs/libuv-1.41 dev-libs/openssl
+DESCRIPTION=Header-only, event based, tiny and easy to use libuv wrapper in modern C++
+EAPI=8
+HOMEPAGE=https://github.com/skypjack/uvw
+IUSE=asan libcxx static-libs test ubsan
+KEYWORDS=~amd64 ~x86 ~arm64
+LICENSE=MIT
+RDEPEND=>=dev-libs/libuv-1.40 <dev-libs/libuv-1.41 dev-libs/openssl
+SLOT=0
+SRC_URI=https://github.com/skypjack/uvw/archive/v2.8.0_libuv_v1.40.tar.gz -> uvw-2.8.0.tar.gz
+_eclasses_=cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=7b1380605b9f75277e70ab26545840b4

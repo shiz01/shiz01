@@ -1,13 +1,13 @@
-BDEPEND=net-misc/curl dev-util/ninja >=dev-util/cmake-3.9.6
+BDEPEND=net-misc/curl dev-util/ninja >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=A date and time library based on the C++11/14/17 <chrono> header
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/HowardHinnant/date
 IUSE=test
-KEYWORDS=~amd64 ~arm64 ~x86
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
 LICENSE=MIT
 RESTRICT=!test? ( test )
-SLOT=0
+SLOT=0/2
 SRC_URI=https://github.com/HowardHinnant/date/archive/v2.4.1.tar.gz -> date-2.4.1.tar.gz
-_eclasses_=cmake-utils	77cd39e6009811bf97a59d91ffd5b54f	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	98584e405e2b0264d37e8f728327fed1	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	wrapper	4251d4c84c25f59094fd557e0063a974	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=e96678972949fbebb457f22e4bab27c2
+_eclasses_=cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=b803498717d7ff7ac32c729099566994

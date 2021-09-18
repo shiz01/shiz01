@@ -1,0 +1,16 @@
+BDEPEND=dev-libs/boost dev-db/mysql-connector-c sys-libs/zlib dev-libs/openssl dev-util/ninja >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare pretend setup test
+DEPEND=dev-libs/boost dev-db/mysql-connector-c sys-libs/zlib dev-libs/openssl
+DESCRIPTION=TrinityCore Open Source MMO Framework.
+EAPI=8
+HOMEPAGE=https://www.trinitycore.org/
+IUSE=+conf cpu_flags_x86_sse2 debug detal-metrics +doc ld-gold +pch-scripts +pch-servers +servers strict-db test +tools whout-metrics
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost dev-db/mysql-connector-c sys-libs/zlib dev-libs/openssl
+REQUIRED_USE=cpu_flags_x86_sse2
+RESTRICT=!test? ( test )
+SLOT=335a
+SRC_URI=https://github.com/TrinityCore/TrinityCore/archive/TDB335.21081.tar.gz -> TrinityCore-335.21081.tar.gz
+_eclasses_=check-reqs	bfb51de63b0462097e40436214dd43c8	cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=6f064c20d3a19e4fb946fe513dd38219

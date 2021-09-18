@@ -1,9 +1,9 @@
 DEFINED_PHASES=postinst
 DESCRIPTION=Virtual for Ada Compiler
-EAPI=7
+EAPI=8
 IUSE=fsf +gpl
 KEYWORDS=amd64 x86
-RDEPEND=fsf? ( || ( sys-devel/gcc[ada] ) ) gpl? ( || ( dev-lang/gnat-gpl[ada] ) ) || ( sys-devel/gcc[ada] dev-lang/gnat-gpl[ada] )
+RDEPEND=fsf? ( || ( sys-devel/gcc[ada] ) ) gpl? ( || ( dev-lang/gnat-gpl[ada] ) )
 REQUIRED_USE=|| ( fsf gpl )
 SLOT=0
-_md5_=e88b81f10d507559b20315c23d8f8a8f
+_md5_=cbc502511b1883a4de391e18d3de1adb
