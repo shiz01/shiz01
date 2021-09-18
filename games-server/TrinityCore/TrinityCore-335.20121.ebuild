@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit check-reqs cmake-utils toolchain-funcs llvm
+inherit check-reqs cmake toolchain-funcs llvm
 
 DESCRIPTION="TrinityCore Open Source MMO Framework."
 HOMEPAGE="https://www.trinitycore.org/"
@@ -43,7 +43,7 @@ src_prepare() {
 	fi
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -62,11 +62,11 @@ src_configure() {
 		-DBUILD_TESTING=$(usex test)
 		-DUSE_LD_GOLD=$(usex ld-gold)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 
 	dodoc AUTHORS CONTRIBUTING.md COPYING README.md doc/{CharacterDBCleanup.txt,GPL-2.0.txt,HowToScript.txt,LoggingHOWTO.txt}
 	newdoc "${FILESDIR}/${P}-git_commit" git-commit
