@@ -8,7 +8,7 @@ inherit cmake git-r3
 DESCRIPTION="A fast multi-producer, multi-consumer lock-free concurrent queue for C++11."
 HOMEPAGE="https://github.com/cameron314/readerwriterqueue"
 EGIT_REPO_URI="https://github.com/cameron314/readerwriterqueue"
-EGIT_COMMIT="c192906c5d566bb76f9988553039fc012a481c1c"
+EGIT_COMMIT="09732844aff873e8ec489e9005c775b6b1c58fa2"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
 LICENSE="BSD-2"
