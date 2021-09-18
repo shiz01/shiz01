@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 # multilib-minimal
 
@@ -26,7 +26,7 @@ S="${WORKDIR}/${PN}-r${PV}"
 
 src_prepare() {
 	eapply_user
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -36,13 +36,13 @@ src_configure() {
 	-DBUILD_VERSION="${PV}"
 	-DENABLE_UNINSTALL=OFF
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 multilib_src_compile() {
-	cmake-utils_src_compile
+	cmake_src_compile
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 }

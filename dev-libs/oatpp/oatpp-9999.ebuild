@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="Modern Web Framework for C++."
 HOMEPAGE="https://github.com/oatpp/oatpp"
@@ -22,7 +22,7 @@ BDEPEND=""
 src_prepare() {
 	eapply_user
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -32,7 +32,7 @@ src_configure() {
 		-DOATPP_COMPAT_BUILD_NO_THREAD_LOCAL=$(usex no-thread_local)
 		)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 

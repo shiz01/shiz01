@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 PV_SUFFIX="6"
 
@@ -43,11 +43,11 @@ src_configure() {
 		-DH5CPP_BUILD_TESTS=$(usex test)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 
 	if ! use examples ; then
 		rm -rf "${ED}/usr/share/h5cpp"

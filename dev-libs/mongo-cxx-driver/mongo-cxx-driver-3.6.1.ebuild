@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 # multilib-minimal
 
@@ -32,6 +32,6 @@ src_configure() {
 	-DENABLE_UNINSTALL=OFF
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

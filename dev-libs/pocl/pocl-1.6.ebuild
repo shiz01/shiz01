@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit cmake-utils flag-o-matic llvm
+inherit cmake flag-o-matic llvm
 
 DESCRIPTION="Portable Computing Language (an implementation of OpenCL)"
 HOMEPAGE="http://portablecl.org"
@@ -36,7 +36,7 @@ src_prepare() {
 	eapply_user
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -44,6 +44,6 @@ src_configure() {
 		-DENABLE_CUDA=$(usex cuda)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

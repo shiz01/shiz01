@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Intel(R) Processor Trace decoder library."
 HOMEPAGE="https://github.com/intel/libipt"
@@ -46,6 +46,6 @@ src_configure() {
 		)
 	fi
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

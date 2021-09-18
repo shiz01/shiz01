@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit check-reqs cmake-utils toolchain-funcs
+inherit check-reqs cmake toolchain-funcs
 
 DESCRIPTION="High performance server-side application framework."
 HOMEPAGE="http://seastar.io/"
@@ -67,7 +67,7 @@ src_prepare() {
 	fi
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -96,6 +96,6 @@ src_configure() {
 		)
 	fi
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

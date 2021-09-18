@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils toolchain-funcs
+inherit cmake toolchain-funcs
 
 DESCRIPTION="Parsing gigabytes of JSON per second."
 HOMEPAGE="https://simdjson.org/"
@@ -22,7 +22,7 @@ src_prepare() {
 	eapply_user
 
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -35,6 +35,6 @@ src_configure() {
 	-DSIMDJSON_IMPLEMENTATION_ARM64=$(usex neon)
 
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

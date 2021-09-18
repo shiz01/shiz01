@@ -5,7 +5,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="C++ client library for ClickHouse"
 HOMEPAGE="https://github.com/ClickHouse/clickhouse-cpp"
@@ -26,7 +26,7 @@ src_prepare() {
 	eapply_user
 	sed -i "s/DESTINATION\ lib/DESTINATION\ $(get_libdir)/" ${S}/clickhouse/CMakeLists.txt
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -35,6 +35,6 @@ src_configure() {
 	-DBUILD_TESTS=$(usex test)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 
@@ -27,7 +27,7 @@ DOCS=( AUTHORS NEWS README{.md,-UPGRADE} )
 
 src_prepare() {
 	append-flags -fPIC
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -35,7 +35,7 @@ src_configure() {
 		-DBUILD_DOC=$(usex doc)
 		-DBUILD_TEST=$(usex test)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_test() {
@@ -85,7 +85,7 @@ src_test() {
 
 src_install() {
 	use doc && HTML_DOCS=( doc/html/. )
-	cmake-utils_src_install
+	cmake_src_install
 
 	if ! use static-libs; then
 		find "${D}" -name '*.la' -delete || die

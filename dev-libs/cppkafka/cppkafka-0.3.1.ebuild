@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="Modern C++ Apache Kafka client library (wrapper for librdkafka)"
 HOMEPAGE="https://github.com/mfontanini/cppkafka"
@@ -37,11 +37,11 @@ src_configure() {
 	-DCPPKAFKA_RDKAFKA_STATIC_LIB=$(usex static-libs)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	DESTDIR=${D} cmake-utils_src_install
+	DESTDIR=${D} cmake_src_install
 	mv "${ED}/usr/lib" "${ED}/usr/$(get_libdir)"
 }
 
