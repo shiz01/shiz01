@@ -7,11 +7,12 @@ inherit cmake git-r3
 
 DESCRIPTION="OZO is a C++17 header-only library for asyncronous communication with PostgreSQL"
 HOMEPAGE="https://github.com/yandex/ozo"
-EGIT_REPO_URI="https://github.com/yandex/${PN}"
+EGIT_REPO_URI="https://github.com/yandex/ozo"
+EGIT_COMMIT="1b06a00ec3cea09108557bbec71cc7a6455dfb6b"
 
 LICENSE="POSTGRESQL"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~amd64-linux"
 
 IUSE="examples test"
 RESTRICT="!test? ( test )"
