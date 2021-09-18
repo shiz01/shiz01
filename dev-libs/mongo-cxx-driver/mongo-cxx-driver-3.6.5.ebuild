@@ -13,21 +13,16 @@ SRC_URI="https://github.com/mongodb/${PN}/archive/r${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
 
-DEPEND=">=dev-libs/mongo-c-driver-1.13.0
+DEPEND=">=dev-libs/mongo-c-driver-1.17.0
 		dev-libs/boost
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
 S="${WORKDIR}/${PN}-r${PV}"
-
-src_prepare() {
-	eapply_user
-	cmake_src_prepare
-}
 
 src_configure() {
 	local mycmakeargs=(
@@ -36,13 +31,7 @@ src_configure() {
 	-DBUILD_VERSION="${PV}"
 	-DENABLE_UNINSTALL=OFF
 	)
+
 	cmake_src_configure
 }
 
-multilib_src_compile() {
-	cmake_src_compile
-}
-
-src_install() {
-	cmake_src_install
-}
