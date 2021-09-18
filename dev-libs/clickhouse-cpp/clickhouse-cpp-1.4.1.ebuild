@@ -3,7 +3,7 @@
 
 # TODO: unbound depends (lz4, gtest, cityhash).
 
-EAPI=7
+EAPI=8
 
 inherit cmake-utils
 
