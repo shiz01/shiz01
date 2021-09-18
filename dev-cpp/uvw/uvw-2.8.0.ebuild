@@ -1,24 +1,22 @@
 # Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit cmake
 
+libuv_ver="_libuv_v1.40"
+
 DESCRIPTION="Header-only, event based, tiny and easy to use libuv wrapper in modern C++"
 HOMEPAGE="https://github.com/skypjack/uvw"
-SRC_URI="https://github.com/skypjack/${PN}/archive/v${PV}_libuv_v1.40.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/skypjack/${PN}/archive/v${PV}${libuv_ver}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm64"
-IUSE="asan libcxx +static-libs test ubsan"
+IUSE="asan libcxx static-libs test ubsan"
 
-#S="${WORKDIR}/uvw-2.8.0_libuv_v1.40" - full path
-#S="${WORKDIR}/${PN}-${PV}_libuv_v1.40" - with env path
-#S="${WORKDIR}/${PN}-${PV}" - default path
-
-S+="_libuv_v1.40"
+S+="${libuv_ver}"
 
 DEPEND=">=dev-libs/libuv-1.40
 		<dev-libs/libuv-1.41
