@@ -13,6 +13,9 @@ if [[ ${PV} == 9999 ]]; then
 	KEYWORDS=""
 	EGIT_BRANCH="master"
 	EGIT_REPO_URI="https://github.com/RedSpah/xxhash_cpp"
+else
+	SRC_URI="https://github.com/RedSpah/xxhash_cpp/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64 ~arm64 ~arm ~x86"
 fi
 
 LICENSE="BSD-2"
