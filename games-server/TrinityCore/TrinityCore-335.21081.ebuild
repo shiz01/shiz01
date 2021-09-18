@@ -3,11 +3,11 @@
 
 EAPI=8
 
-inherit check-reqs cmake toolchain-funcs llvm
+inherit check-reqs cmake toolchain-funcs
 
 DESCRIPTION="TrinityCore Open Source MMO Framework."
 HOMEPAGE="https://www.trinitycore.org/"
-SRC_URI="https://github.com/${PN}/${PN}/archive/TDB${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/TrinityCore/TrinityCore/archive/TDB${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="335a"
@@ -32,16 +32,6 @@ S="${WORKDIR}/${PN}-TDB${PV}"
 
 src_prepare() {
 	eapply_user
-
-	if $(tc-is-clang) ; then
-		if (( $(clang-major-version) > 7 )) ; then
-			llvm_pkg_setup
-			append-flags -stdlib=libstdc++ # libc++ not supported.
-		else
-			die "Error, clang version below 7 does not support."
-		fi
-	fi
-
 	append-flags -fPIC
 	cmake_src_prepare
 }

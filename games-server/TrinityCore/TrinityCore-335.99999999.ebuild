@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit check-reqs cmake toolchain-funcs llvm
+inherit check-reqs cmake toolchain-funcs
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
@@ -40,16 +40,6 @@ CHECKREQS_DISK_USR="1400M"
 
 src_prepare() {
 	eapply_user
-
-	if $(tc-is-clang) ; then
-		if (( $(clang-major-version) > 7 )) ; then
-			llvm_pkg_setup
-			append-flags -stdlib=libstdc++ # libc++ not supported.
-		else
-			die "Error, clang version below 7 does not support."
-		fi
-	fi
-
 	append-flags -fPIC
 	cmake_src_prepare
 }
