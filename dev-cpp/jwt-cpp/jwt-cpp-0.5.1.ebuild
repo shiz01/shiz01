@@ -7,7 +7,7 @@ inherit cmake
 
 DESCRIPTION="A header only library for creating and validating json web tokens in C++."
 HOMEPAGE="https://github.com/Thalhammer/jwt-cpp"
-SRC_URI="https://github.com/Thalhammer/${PN}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/Thalhammer/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
 LICENSE="MIT"
@@ -23,16 +23,14 @@ src_configure() {
 		-DJWT_BUILD_EXAMPLES=$(usex examples)
 		-DJWT_ENABLE_COVERAGE=$(usex coverage)
 		-DJWT_EXTERNAL_PICOJSON=$(usex system-picojson)
+		-DJWT_CMAKE_FILES_INSTALL_DIR="${EPREFIX}/usr/$(get_libdir)/cmake/${PN}"
 	)
+
 	cmake_src_configure
 }
 
 src_install() {
 	DESTDIR=${D} cmake_src_install
-
-	mkdir -p "${ED}/usr/$(get_libdir)/cmake"
-	mv "${ED}/usr/cmake" "${ED}/usr/$(get_libdir)"
-	rmdir "${ED}/usr/cmake" &> /dev/null
 
 	for i in ${DOCS[@]}; do
 		dodoc $i;
