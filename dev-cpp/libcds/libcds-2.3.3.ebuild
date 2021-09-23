@@ -9,7 +9,7 @@ DESCRIPTION="A C++ library of Concurrent Data Structures."
 HOMEPAGE="https://github.com/khizmax/libcds"
 SRC_URI="https://github.com/khizmax/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="BSL-1.0"
+LICENSE=Boost-1.0
 SLOT="0"
 KEYWORDS="~amd64"
 
