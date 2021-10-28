@@ -15,6 +15,13 @@ KEYWORDS="~amd64 ~x86"
 IUSE="examples +shared test"
 RESTRICT="!test? ( test )"
 
+src_prepare(){
+	# fix missing include <limits>
+	local file="${S}/source/detail/number_format/number_formatter.cpp"
+	{ echo '#include <limits>'; cat ${file}; } > ${file}.new && mv ${file}.new ${file};
+	cmake_src_prepare
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DTESTS=$(usex test)
