@@ -4,6 +4,7 @@ DEPEND=>=dev-libs/librdkafka-0.9.4 >=dev-libs/boost-1.55 lz4? ( dev-libs/librdka
 DESCRIPTION=Modern C++ Apache Kafka client library (wrapper for librdkafka)
 EAPI=8
 HOMEPAGE=https://github.com/mfontanini/cppkafka
+INHERIT=cmake
 IUSE=+boost examples lz4 sasl ssl static test zstd
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
@@ -11,5 +12,5 @@ RDEPEND=>=dev-libs/librdkafka-0.9.4 >=dev-libs/boost-1.55 lz4? ( dev-libs/librdk
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/mfontanini/cppkafka/archive/v0.3.0.tar.gz -> cppkafka-0.3.0.tar.gz
-_eclasses_=cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_eclasses_=cmake	11fee991ab428a3370e5c20fa8231fb6	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	xdg-utils	4f29a8b760a594a212abe9c2ba957c31
 _md5_=7da32c138a7ac0591d6e0a2ebdc90aaa
