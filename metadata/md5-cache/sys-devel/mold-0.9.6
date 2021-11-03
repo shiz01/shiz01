@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/xxhash dev-libs/openssl sys-libs/zlib
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/xxhash dev-libs/openssl sys-libs/zlib
+DESCRIPTION=mold: A Modern Linker
+EAPI=8
+HOMEPAGE=https://github.com/rui314/mold
+INHERIT=flag-o-matic toolchain-funcs
+IUSE=clang debug lto asan tsan
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-libs/xxhash dev-libs/openssl sys-libs/zlib
+SLOT=0
+SRC_URI=https://github.com/rui314/mold/archive/refs/tags/v0.9.6.tar.gz -> mold-0.9.6.tar.gz
+_eclasses_=flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa
+_md5_=c82ab96a084ba36e24f5e0c806029881
