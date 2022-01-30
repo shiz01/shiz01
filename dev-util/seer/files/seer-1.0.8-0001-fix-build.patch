@@ -1,0 +1,26 @@
+From aa253f5577e0b158d2b177813d6c9b5d7c6db077 Mon Sep 17 00:00:00 2001
+From: none <none@example.com>
+Date: Sun, 30 Jan 2022 21:40:50 +0700
+Subject: [PATCH] fix build
+
+---
+ src/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 7aa4016..e4abde4 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -155,7 +155,7 @@ endif()
+ 
+ add_compile_definitions(QT_DEPRECATED_WARNINGS)
+ 
+-add_executable(${PROJECT_NAME} ${SYSTEM_TYPE} ${SOURCE_FILES})
++add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+ 
+ install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+ 
+-- 
+2.34.1
+
+
