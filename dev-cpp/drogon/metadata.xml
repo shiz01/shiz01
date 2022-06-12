@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>shziz01@tutanota.com</email>
+		<name>Shiz01</name>
+	</maintainer>
+<upstream>
+	<doc>https://drogon.docsforge.com/</doc>
+</upstream>
+<use>
+	<flag name="brotli">Enable support for brotli compression</flag>
+	<flag name="ctl">Build drogon_ctl</flag>
+	<flag name="c++20">Build with C++20 coroutine support</flag>
+	<flag name="mysql">Add support for the <pkg>virtual/mysql</pkg> database. Required orm flag</flag>
+	<flag name="orm">Build with orm support</flag>
+	<flag name="postgresql">Add support for the <pkg>dev-db/postgresql</pkg> database. Required orm flag</flag>
+	<flag name="pq_batch">Use batch mode for libpq. Required postgresql flag.</flag>
+	<flag name="redis">Add support for the Redis database via <pkg>dev-libs/hiredis</pkg></flag>
+	<flag name="shared">Build drogon as a shared library</flag>
+	<flag name="sqlite">Add support for the Sqlite3 database via <pkg>dev-db/sqlite</pkg></flag>
+</use>
+</pkgmetadata>
