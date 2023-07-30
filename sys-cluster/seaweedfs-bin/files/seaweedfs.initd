@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+# Copyright 2022 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="SeaweedFS daemon"
+description=""
+command=/usr/bin/weed
+command_args="${seaweedfs_args}"
+
+depend() {
+    use dns logger
+	after net ntpd ntp-client chronyd
+}

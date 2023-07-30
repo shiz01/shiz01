@@ -1,0 +1,20 @@
+[Unit]
+Description=SeaweedFS
+Documentation=https://github.com/chrislusf/seaweedfs/wiki
+After=network.target
+Requires=network.target
+
+[Service]
+WorkingDirectory=/var/lib/seaweedfs
+EnvironmentFile=/etc/kubernetes/config
+ExecStart=/usr/bin/weed \
+ ${SEAWEEDFS_DIR} \
+ ${SEAWEEDFS_ARGS} \
+ ${SEAWEEDFS_LOGLEVEL}
+
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Firmware for DSLogic
+EAPI=8
+HOMEPAGE=https://github.com/DreamSourceLab/DSView
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=sci-libs/libsigrok || ( sci-electronics/sigrok-cli sci-electronics/pulseview )
+SLOT=0
+_md5_=4ccbc25465cf973a2d65aa47a8f447f3

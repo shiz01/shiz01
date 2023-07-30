@@ -1,0 +1,15 @@
+BDEPEND=!qt6? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 dev-qt/qtgui:5 ) qt6? ( dev-qt/qtcore:6 dev-qt/qtnetwork:6 dev-qt/qtwidgets:6 dev-qt/qtxml:6 dev-qt/qtgui:6 ) kde-frameworks/extra-cmake-modules dev-util/cmake sys-libs/zlib virtual/jdk media-libs/libglvnd media-libs/mesa media-libs/libpng >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=!qt6? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 dev-qt/qtgui:5 ) qt6? ( dev-qt/qtcore:6 dev-qt/qtnetwork:6 dev-qt/qtwidgets:6 dev-qt/qtxml:6 dev-qt/qtgui:6 ) kde-frameworks/extra-cmake-modules dev-util/cmake sys-libs/zlib virtual/jdk media-libs/libglvnd media-libs/mesa media-libs/libpng
+DESCRIPTION=Fork of PolyMC that adds Ely.by support and allows you to use offline mode
+EAPI=8
+HOMEPAGE=https://github.com/fn2006/PollyMC
+INHERIT=cmake git-r3
+IUSE=lto qt6 test
+KEYWORDS=amd64 ~arm64
+LICENSE=GPL-3.0
+PROPERTIES=live
+RDEPEND=!qt6? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 dev-qt/qtgui:5 ) qt6? ( dev-qt/qtcore:6 dev-qt/qtnetwork:6 dev-qt/qtwidgets:6 dev-qt/qtxml:6 dev-qt/qtgui:6 ) kde-frameworks/extra-cmake-modules dev-util/cmake sys-libs/zlib virtual/jdk media-libs/libglvnd media-libs/mesa media-libs/libpng
+SLOT=0
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-r3	2358a7b20091609e24bd3a83b3ac5991	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=9eea463d0774bfe4a78462195574648b
