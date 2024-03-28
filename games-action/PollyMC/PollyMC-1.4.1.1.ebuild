@@ -26,11 +26,12 @@ DEPEND="
 		dev-qt/qtxml:5
 		dev-qt/qtgui:5
 	)
-	qt6? ( dev-qt/qtcore:6
-		dev-qt/qtnetwork:6
-		dev-qt/qtwidgets:6
-		dev-qt/qtxml:6
-		dev-qt/qtgui:6
+	qt6? (
+		dev-qt/qtbase:6
+		dev-qt/qtbase:6[network]
+		dev-qt/qtbase:6[widgets]
+		dev-qt/qtbase:6[xml]
+		dev-qt/qtbase:6[gui]
 	)
 
 	kde-frameworks/extra-cmake-modules
