@@ -7,10 +7,14 @@ inherit cmake git-r3
 
 DESCRIPTION="Fork of PolyMC that adds Ely.by support and allows you to use offline mode"
 HOMEPAGE="https://github.com/fn2006/PollyMC"
+
+# SRC_URI="https://github.com/fn2006/PollyMC/archive/refs/tags/1.4.2.tar.gz"
+
 #SRC_URI="https://github.com/fn2006/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+
 EGIT_REPO_URI="https://github.com/fn2006/PollyMC"
-EGIT_BRANCH="stable"
-EGIT_COMMIT="94b1df22bf1621f1271cc8d3eb16663693f655da"
+EGIT_BRANCH="legacy-develop"
+EGIT_COMMIT="d2a9dd88db564cf31b600ef2828d7636bffdcb52"
 
 
 LICENSE="GPL-3.0"
